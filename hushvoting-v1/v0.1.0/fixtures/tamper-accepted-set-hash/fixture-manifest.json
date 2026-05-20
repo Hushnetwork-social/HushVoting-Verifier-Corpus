@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-accepted-set-hash",
+  "fixtureFamily": "accepted_ballots",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-accepted-set-hash",
+  "packageHash": "sha256:331429593a71091aedd9e7d3e02a8b8587064118c4ae591e93922a3b54a6cc23",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes the accepted ballot inventory hash."
+  },
+  "changedArtifact": "artifacts/election-record/accepted-ballot-set.json",
+  "expectedPrimaryResultCode": "accepted_ballot_inventory_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-accepted-set-hash.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-accepted-set-hash",
+    "output": "validation/verifier-output/tamper-accepted-set-hash"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

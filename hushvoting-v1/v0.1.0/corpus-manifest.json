@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "verifier-corpus-manifest.v1",
+  "corpusId": "hushvoting-public-verifier-corpus",
+  "corpusFamily": "hushvoting-v1",
+  "corpusVersion": "v0.1.0",
+  "repositoryRelativePath": "hushvoting-v1/v0.1.0",
+  "status": "accepted",
+  "visibility": "public",
+  "publicRepository": "https://github.com/Hushnetwork-social/HushVoting-Verifier-Corpus",
+  "publicRepositoryRef": "v0.1.0",
+  "protocolPackage": {
+    "packageId": "omega-hushvoting-v1",
+    "packageVersion": "v1.2.0",
+    "source": "https://github.com/Hushnetwork-social/protocol-omega-packages",
+    "profileId": "public_anonymous_v1"
+  },
+  "verifier": {
+    "repository": "https://github.com/Hushnetwork-social/hush-server-node",
+    "sourceRef": "f08d494",
+    "projectPath": "Tools/HushVotingVerifier/HushVotingVerifier.csproj",
+    "runtime": ".NET 9",
+    "profileId": "public_anonymous_v1",
+    "binaryRelease": "sha256:7048677ba0c66c69c123ab7d046eb03a0d3c7642103f3dd6a2645873c928d6a4"
+  },
+  "generator": {
+    "name": "VerifierCorpusPromoter",
+    "sourceRef": "f08d494",
+    "canonicalizationVersion": "feat135-canonical-json-v1"
+  },
+  "goodSample": {
+    "fixtureId": "sample-good-finalized-election",
+    "packagePath": "packages/sample-good-finalized-election",
+    "packageHash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36",
+    "expectedResultRef": "expected-results/sample-good-finalized-election.json",
+    "expectedOverallStatus": "pass",
+    "expectedExitCode": 0
+  },
+  "fixtureIndex": {
+    "path": "fixtures/fixture-index.json",
+    "sha256Hash": "sha256:98e2e876f798f553340d91c2d12fe9036c16b91d5726a40f36c332d7ae11a200",
+    "fixtures": [
+      {
+        "fixtureId": "sample-good-finalized-election",
+        "fixtureFamily": "good_sample",
+        "packagePath": "packages/sample-good-finalized-election",
+        "packageHash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36",
+        "expectedResultRef": "expected-results/sample-good-finalized-election.json"
+      },
+      {
+        "fixtureId": "tamper-accepted-set-hash",
+        "fixtureFamily": "accepted_ballots",
+        "packagePath": "packages/tamper-accepted-set-hash",
+        "packageHash": "sha256:331429593a71091aedd9e7d3e02a8b8587064118c4ae591e93922a3b54a6cc23",
+        "expectedResultRef": "expected-results/tamper-accepted-set-hash.json"
+      },
+      {
+        "fixtureId": "tamper-artifact-hash",
+        "fixtureFamily": "package_manifest",
+        "packagePath": "packages/tamper-artifact-hash",
+        "packageHash": "sha256:3f640c5b8e6df8e6f5726d7be23f77432966fad21126e7e66028b84c89f9daf9",
+        "expectedResultRef": "expected-results/tamper-artifact-hash.json"
+      },
+      {
+        "fixtureId": "tamper-duplicate-nullifier",
+        "fixtureFamily": "accepted_ballots",
+        "packagePath": "packages/tamper-duplicate-nullifier",
+        "packageHash": "sha256:b8b5d348676782dc187c124e2ee4ff4fe228106e536b11ff3dd79af6edfaa467",
+        "expectedResultRef": "expected-results/tamper-duplicate-nullifier.json"
+      },
+      {
+        "fixtureId": "tamper-malformed-package-json",
+        "fixtureFamily": "package_manifest",
+        "packagePath": "packages/tamper-malformed-package-json",
+        "packageHash": "sha256:e3bed2917775247fc5b19c156a99b6394fe78ac9dc8825319d38a219f6185b4a",
+        "expectedResultRef": "expected-results/tamper-malformed-package-json.json"
+      },
+      {
+        "fixtureId": "tamper-missing-artifact",
+        "fixtureFamily": "package_manifest",
+        "packagePath": "packages/tamper-missing-artifact",
+        "packageHash": "sha256:b4b047e9378a03ca933129800da30c8590a1567872befdf3517ee6d8b00fcb8b",
+        "expectedResultRef": "expected-results/tamper-missing-artifact.json"
+      },
+      {
+        "fixtureId": "tamper-profile-mismatch",
+        "fixtureFamily": "profile_input",
+        "packagePath": "packages/tamper-profile-mismatch",
+        "packageHash": "sha256:58cb205ba79d337202e3eb49c4231ec6bc26bbf00b8df394db6c548f31952665",
+        "expectedResultRef": "expected-results/tamper-profile-mismatch.json"
+      },
+      {
+        "fixtureId": "tamper-published-stream-hash",
+        "fixtureFamily": "published_ballots",
+        "packagePath": "packages/tamper-published-stream-hash",
+        "packageHash": "sha256:7ae798810754d4f19d814e2b42ca22cf9a4d0a0ed2a03eb27ce7481b52c91205",
+        "expectedResultRef": "expected-results/tamper-published-stream-hash.json"
+      },
+      {
+        "fixtureId": "tamper-published-stream-sequence",
+        "fixtureFamily": "published_ballots",
+        "packagePath": "packages/tamper-published-stream-sequence",
+        "packageHash": "sha256:fa4000f59a18952d77caa69ff6afa6b868c1a314502f61b9df2d0d2bb98457b9",
+        "expectedResultRef": "expected-results/tamper-published-stream-sequence.json"
+      },
+      {
+        "fixtureId": "tamper-sp04-accepted-binding",
+        "fixtureFamily": "sp04_challenge_spoil",
+        "packagePath": "packages/tamper-sp04-accepted-binding",
+        "packageHash": "sha256:ce14b89f0901493119128494d2e4619bc61195045a464bd1fea4b3553fb3ec4d",
+        "expectedResultRef": "expected-results/tamper-sp04-accepted-binding.json"
+      },
+      {
+        "fixtureId": "tamper-sp04-count",
+        "fixtureFamily": "sp04_challenge_spoil",
+        "packagePath": "packages/tamper-sp04-count",
+        "packageHash": "sha256:466026b9cc825eac8343db58bad2651481dd0f8e26f783223e2a1e02dad2624b",
+        "expectedResultRef": "expected-results/tamper-sp04-count.json"
+      },
+      {
+        "fixtureId": "tamper-sp04-receipt-set-hash",
+        "fixtureFamily": "sp04_challenge_spoil",
+        "packagePath": "packages/tamper-sp04-receipt-set-hash",
+        "packageHash": "sha256:d78a4bf4da915790b059003c07b2ce0ed597ec430cef983aa9bf54201e86d618",
+        "expectedResultRef": "expected-results/tamper-sp04-receipt-set-hash.json"
+      },
+      {
+        "fixtureId": "tamper-sp05-count-reconciliation",
+        "fixtureFamily": "sp05_public_boundary",
+        "packagePath": "packages/tamper-sp05-count-reconciliation",
+        "packageHash": "sha256:4c203685fdb4d89300662c02d93fe4e09ce22a7767c8b30d73c22327cdcbf99d",
+        "expectedResultRef": "expected-results/tamper-sp05-count-reconciliation.json"
+      },
+      {
+        "fixtureId": "tamper-sp05-public-named-field",
+        "fixtureFamily": "sp05_public_boundary",
+        "packagePath": "packages/tamper-sp05-public-named-field",
+        "packageHash": "sha256:8a67709bf35b6d14ef7b5f8263282f9f49284f27874684ff7cbd7d273c97f9af",
+        "expectedResultRef": "expected-results/tamper-sp05-public-named-field.json"
+      },
+      {
+        "fixtureId": "tamper-sp08-circuit-key-hash-mismatch",
+        "fixtureFamily": "sp08_release_integrity",
+        "packagePath": "packages/tamper-sp08-circuit-key-hash-mismatch",
+        "packageHash": "sha256:06675086baf642c43a2f187f1a7cb9b457a9f0c85c732a71be9d8b992bddb035",
+        "expectedResultRef": "expected-results/tamper-sp08-circuit-key-hash-mismatch.json"
+      },
+      {
+        "fixtureId": "tamper-sp08-component-hash-mismatch",
+        "fixtureFamily": "sp08_release_integrity",
+        "packagePath": "packages/tamper-sp08-component-hash-mismatch",
+        "packageHash": "sha256:d93769d62fd115fb6837fc8e69693c28bbc1ed460cd2fb9f9f9182f7790e0203",
+        "expectedResultRef": "expected-results/tamper-sp08-component-hash-mismatch.json"
+      },
+      {
+        "fixtureId": "tamper-sp08-mutable-artifact-reference",
+        "fixtureFamily": "sp08_release_integrity",
+        "packagePath": "packages/tamper-sp08-mutable-artifact-reference",
+        "packageHash": "sha256:919a0e2cd5ae62b41441036d4fa236feef5a6124fd17ec1c63f0ca57d9bf2bcd",
+        "expectedResultRef": "expected-results/tamper-sp08-mutable-artifact-reference.json"
+      },
+      {
+        "fixtureId": "tamper-sp08-protocol-package-mismatch",
+        "fixtureFamily": "sp08_release_integrity",
+        "packagePath": "packages/tamper-sp08-protocol-package-mismatch",
+        "packageHash": "sha256:5a170593b59376d70a28dac4ce601b3ece30d868dc9fda097b318a06ddaf4734",
+        "expectedResultRef": "expected-results/tamper-sp08-protocol-package-mismatch.json"
+      },
+      {
+        "fixtureId": "tamper-sp08-release-manifest-hash",
+        "fixtureFamily": "sp08_release_integrity",
+        "packagePath": "packages/tamper-sp08-release-manifest-hash",
+        "packageHash": "sha256:a235a6ad261fe92cb23faea751daf207b281b39cdaa8a3695c75d98120c86cc8",
+        "expectedResultRef": "expected-results/tamper-sp08-release-manifest-hash.json"
+      },
+      {
+        "fixtureId": "tamper-sp10-forbidden-leak",
+        "fixtureFamily": "sp10_operational_boundary",
+        "packagePath": "packages/tamper-sp10-forbidden-leak",
+        "packageHash": "sha256:8a3b3162599303176cf08953a0cc50439f248a54f8787a736141145bc3d7563d",
+        "expectedResultRef": "expected-results/tamper-sp10-forbidden-leak.json"
+      },
+      {
+        "fixtureId": "tamper-sp10-kms-public-value-leak",
+        "fixtureFamily": "sp10_operational_boundary",
+        "packagePath": "packages/tamper-sp10-kms-public-value-leak",
+        "packageHash": "sha256:d334bc0670dbb7dd05b8e0b30c03e56bb7790a46f8bce68ee10198b5b2b924ae",
+        "expectedResultRef": "expected-results/tamper-sp10-kms-public-value-leak.json"
+      },
+      {
+        "fixtureId": "tamper-unsupported-live-dependency",
+        "fixtureFamily": "profile_input",
+        "packagePath": "https://example.invalid/hushvoting-public-verifier-corpus/package",
+        "packageHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "expectedResultRef": "expected-results/tamper-unsupported-live-dependency.json"
+      },
+      {
+        "fixtureId": "tamper-wrong-election-id",
+        "fixtureFamily": "election_identity",
+        "packagePath": "packages/tamper-wrong-election-id",
+        "packageHash": "sha256:f889a3c4bc80f06795c2c1e8a740db975c02d9ba8736c0f6d431d77f080c734d",
+        "expectedResultRef": "expected-results/tamper-wrong-election-id.json"
+      }
+    ]
+  },
+  "validationSummary": {
+    "path": "validation/clean-machine-validation-summary.json",
+    "status": "windows_linux_replay_validated"
+  },
+  "noSecretScan": {
+    "path": "validation/no-secret-scan-result.json",
+    "status": "pass",
+    "unexpectedFindingCount": 0,
+    "expectedTamperFindingCount": 2
+  },
+  "readinessFragment": {
+    "path": "readiness/verifier-corpus-readiness-fragment.json"
+  },
+  "downstreamHandoff": {
+    "path": "handoff/verifier-corpus-downstream-handoff.json"
+  },
+  "generatedAt": "2026-05-20T00:00:00.0000000Z",
+  "supersessionRules": [
+    "verifier source ref changes",
+    "Protocol Omega package version changes",
+    "verification package schema changes",
+    "verifier result-code contract changes",
+    "SP-07 publication proof contract changes",
+    "SP-08 release integrity contract changes",
+    "SP-10 operational evidence contract changes",
+    "corpus schema changes"
+  ],
+  "publicBoundaryStatement": "Synthetic public corpus only. No private backend, database, cloud account, real voter data, real customer election data, or authority approval claim is required or included."
+}

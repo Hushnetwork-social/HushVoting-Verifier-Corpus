@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp05-public-named-field",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "eligibility_public_privacy_boundary_violation"
+  ],
+  "requiredCheckStatuses": {
+    "ELI-011": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:8a67709bf35b6d14ef7b5f8263282f9f49284f27874684ff7cbd7d273c97f9af"
+  },
+  "normalizedOutputHash": "sha256:17532b8c3fe8f685e5b2d6133d73e338beecedca7f425bb9a416a485a95adc92",
+  "outputRef": "validation/verifier-output/tamper-sp05-public-named-field/VerifierOutput.json"
+}

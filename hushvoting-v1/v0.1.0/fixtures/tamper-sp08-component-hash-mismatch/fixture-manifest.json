@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp08-component-hash-mismatch",
+  "fixtureFamily": "sp08_release_integrity",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp08-component-hash-mismatch",
+  "packageHash": "sha256:d93769d62fd115fb6837fc8e69693c28bbc1ed460cd2fb9f9f9182f7790e0203",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks release component hash shape."
+  },
+  "changedArtifact": "artifacts/election-record/release-manifest.json",
+  "expectedPrimaryResultCode": "release_integrity_component_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp08-component-hash-mismatch.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp08-component-hash-mismatch",
+    "output": "validation/verifier-output/tamper-sp08-component-hash-mismatch"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp04-count",
+  "fixtureFamily": "sp04_challenge_spoil",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp04-count",
+  "packageHash": "sha256:466026b9cc825eac8343db58bad2651481dd0f8e26f783223e2a1e02dad2624b",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes the SP-04 accepted-bound receipt count."
+  },
+  "changedArtifact": "artifacts/election-record/sp04-evidence.json",
+  "expectedPrimaryResultCode": "challenge_spoil_count_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp04-count.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp04-count",
+    "output": "validation/verifier-output/tamper-sp04-count"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

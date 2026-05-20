@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp10-kms-public-value-leak",
+  "fixtureFamily": "sp10_operational_boundary",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp10-kms-public-value-leak",
+  "packageHash": "sha256:d334bc0670dbb7dd05b8e0b30c03e56bb7790a46f8bce68ee10198b5b2b924ae",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Adds a synthetic public KMS-style value marker."
+  },
+  "changedArtifact": "artifacts/election-record/operational-security-summary.json",
+  "expectedPrimaryResultCode": "operational_security_forbidden_material",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp10-kms-public-value-leak.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp10-kms-public-value-leak",
+    "output": "validation/verifier-output/tamper-sp10-kms-public-value-leak"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": true,
+    "unexpectedFindingPolicy": "block"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp04-receipt-set-hash",
+  "fixtureFamily": "sp04_challenge_spoil",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp04-receipt-set-hash",
+  "packageHash": "sha256:d78a4bf4da915790b059003c07b2ce0ed597ec430cef983aa9bf54201e86d618",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes the SP-04 receipt commitment set hash."
+  },
+  "changedArtifact": "artifacts/election-record/sp04-evidence.json",
+  "expectedPrimaryResultCode": "challenge_spoil_receipt_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp04-receipt-set-hash.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp04-receipt-set-hash",
+    "output": "validation/verifier-output/tamper-sp04-receipt-set-hash"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

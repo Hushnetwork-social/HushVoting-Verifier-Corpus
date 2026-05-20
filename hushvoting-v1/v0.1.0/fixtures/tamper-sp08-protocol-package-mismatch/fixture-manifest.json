@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp08-protocol-package-mismatch",
+  "fixtureFamily": "sp08_release_integrity",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp08-protocol-package-mismatch",
+  "packageHash": "sha256:5a170593b59376d70a28dac4ce601b3ece30d868dc9fda097b318a06ddaf4734",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks the protocol package binding in release integrity."
+  },
+  "changedArtifact": "artifacts/election-record/release-integrity.json",
+  "expectedPrimaryResultCode": "release_integrity_circuit_or_package_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp08-protocol-package-mismatch.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp08-protocol-package-mismatch",
+    "output": "validation/verifier-output/tamper-sp08-protocol-package-mismatch"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

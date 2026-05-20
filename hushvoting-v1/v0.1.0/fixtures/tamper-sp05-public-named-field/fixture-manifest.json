@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp05-public-named-field",
+  "fixtureFamily": "sp05_public_boundary",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp05-public-named-field",
+  "packageHash": "sha256:8a67709bf35b6d14ef7b5f8263282f9f49284f27874684ff7cbd7d273c97f9af",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Adds a public named-field leak to the eligibility summary."
+  },
+  "changedArtifact": "artifacts/election-record/eligibility-summary.json",
+  "expectedPrimaryResultCode": "eligibility_public_privacy_boundary_violation",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp05-public-named-field.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp05-public-named-field",
+    "output": "validation/verifier-output/tamper-sp05-public-named-field"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

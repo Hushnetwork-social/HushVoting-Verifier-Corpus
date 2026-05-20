@@ -1,0 +1,74 @@
+{
+  "verifiedAt": "2026-05-20T00:00:00Z",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "schema": "HushVotingOperationalVerifierOutput-v1",
+  "results": [
+    {
+      "checkCode": "OPS-000",
+      "status": "pass",
+      "resultCode": "operational_security_profile_declared",
+      "message": "SP-10 managed deployment profile is declared without implying rollout readiness.",
+      "evidence": {
+        "deployment_profile_id": "hushvoting_managed_aws_container_v1",
+        "evidence_state": "managed_profile_evidence_available"
+      }
+    },
+    {
+      "checkCode": "OPS-001",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 deployment evidence is bound to the SP-08 release manifest and immutable deployment reference.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-002",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 access-control snapshot evidence is present.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-003",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 custody mode is declared for the governance mode.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-004",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 executor key lifecycle is declared as ephemeral in-memory handling.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-005",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 public privacy boundary excludes forbidden operational material.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-006",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 backup/restore evidence is referenced.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-007",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 incident/no-incident declaration is present.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-008",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 auditor-room access-log evidence is referenced.",
+      "evidence": {}
+    }
+  ]
+}

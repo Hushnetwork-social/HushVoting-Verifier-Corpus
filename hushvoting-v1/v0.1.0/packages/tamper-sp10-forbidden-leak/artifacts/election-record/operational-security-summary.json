@@ -1,0 +1,31 @@
+{
+  "doesNotCompleteOperationalReadiness": true,
+  "blocksHighAssurance": false,
+  "schema": "HushVotingOperationalSecuritySummary-v1",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "programVersion": "SP10-P1",
+  "deploymentProfileId": "hushvoting_managed_aws_container_v1",
+  "evidenceState": "managed_profile_evidence_available",
+  "operationalReadinessCaveat": "Certified for public elections.",
+  "releaseEvidenceMode": "official_sp08",
+  "releaseManifestHash": "5b007cc0f9025b7bb9ddcf5b8079f3ce68fc59494a172598749fe3aaa366ea72",
+  "immutableDeploymentRef": "server@sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+  "custodyMode": "aws_kms_per_election_envelope_v1",
+  "executorKeyLifecycle": "executor_ephemeral_memory_key_v1",
+  "accessSnapshotHashOrRestrictedRef": "sha256:access-snapshot",
+  "backupRestoreHashOrRestrictedRef": "sha256:backup-restore",
+  "incidentStatus": "no_incident_declared",
+  "auditorRoomAccessLogHashOrRestrictedRef": "sha256:auditor-room-access-log",
+  "primaryResultCode": "operational_security_evidence_valid",
+  "primaryIssue": null,
+  "publicEvidenceFiles": [
+    "artifacts/election-record/operational-security-summary.json",
+    "artifacts/election-record/operational-deployment-evidence.json",
+    "artifacts/election-record/operational-custody-evidence.json",
+    "artifacts/election-record/operational-verifier-output.json"
+  ],
+  "restrictedEvidenceFiles": [],
+  "publicPrivacyBoundary": [
+    "rawLogLine"
+  ]
+}

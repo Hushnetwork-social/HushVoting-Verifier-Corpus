@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-unsupported-live-dependency",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "unsupported_live_dependency"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-CLI-001": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "unavailable",
+    "electionId": "unavailable",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "normalizedOutputHash": "sha256:ac6518f645a6406c0e95925dfdcba0aa5151828401a25659f9ab161e7ebd8044",
+  "outputRef": "validation/verifier-output/tamper-unsupported-live-dependency/VerifierOutput.json"
+}

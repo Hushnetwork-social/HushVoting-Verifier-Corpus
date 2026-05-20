@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-artifact-hash",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "package_manifest_artifact_hash_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-MAN-002": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:3f640c5b8e6df8e6f5726d7be23f77432966fad21126e7e66028b84c89f9daf9"
+  },
+  "normalizedOutputHash": "sha256:d822d7e3b2c1e924bb8f67ace485cd68886c94cc09ebac9218341b8cec41d827",
+  "outputRef": "validation/verifier-output/tamper-artifact-hash/VerifierOutput.json"
+}

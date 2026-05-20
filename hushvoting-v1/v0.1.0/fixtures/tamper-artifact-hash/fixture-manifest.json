@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-artifact-hash",
+  "fixtureFamily": "package_manifest",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-artifact-hash",
+  "packageHash": "sha256:3f640c5b8e6df8e6f5726d7be23f77432966fad21126e7e66028b84c89f9daf9",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes artifact bytes without updating the package manifest hash."
+  },
+  "changedArtifact": "artifacts/election-record/result-binding.json",
+  "expectedPrimaryResultCode": "package_manifest_artifact_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-artifact-hash.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-artifact-hash",
+    "output": "validation/verifier-output/tamper-artifact-hash"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

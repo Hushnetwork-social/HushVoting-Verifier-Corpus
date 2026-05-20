@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp04-accepted-binding",
+  "fixtureFamily": "sp04_challenge_spoil",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp04-accepted-binding",
+  "packageHash": "sha256:ce14b89f0901493119128494d2e4619bc61195045a464bd1fea4b3553fb3ec4d",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks accepted ballot to receipt commitment binding."
+  },
+  "changedArtifact": "artifacts/election-record/accepted-ballot-set.json",
+  "expectedPrimaryResultCode": "challenge_spoil_receipt_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp04-accepted-binding.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp04-accepted-binding",
+    "output": "validation/verifier-output/tamper-sp04-accepted-binding"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

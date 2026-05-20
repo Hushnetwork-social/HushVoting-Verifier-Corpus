@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp08-mutable-artifact-reference",
+  "fixtureFamily": "sp08_release_integrity",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp08-mutable-artifact-reference",
+  "packageHash": "sha256:919a0e2cd5ae62b41441036d4fa236feef5a6124fd17ec1c63f0ca57d9bf2bcd",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Uses a mutable release artifact reference."
+  },
+  "changedArtifact": "artifacts/election-record/release-manifest.json",
+  "expectedPrimaryResultCode": "release_integrity_mutable_artifact_reference",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp08-mutable-artifact-reference.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp08-mutable-artifact-reference",
+    "output": "validation/verifier-output/tamper-sp08-mutable-artifact-reference"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

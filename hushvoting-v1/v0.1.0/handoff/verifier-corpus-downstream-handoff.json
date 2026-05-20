@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "verifier-corpus-downstream-handoff.v1",
+  "handoffId": "FEAT-135-v0.1.0-handoff",
+  "producerFeature": "FEAT-135",
+  "corpusVersion": "v0.1.0",
+  "publicRepositoryRef": "v0.1.0",
+  "manifestHash": "sha256:a4e9f7f8a4e62b8611e22410da2400f2d22e7d22ab585bb50a0b997745301b64",
+  "goodPackageHash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36",
+  "fixtureIndexHash": "sha256:98e2e876f798f553340d91c2d12fe9036c16b91d5726a40f36c332d7ae11a200",
+  "verifierSourceRef": "f08d494",
+  "verifierHash": "sha256:7048677ba0c66c69c123ab7d046eb03a0d3c7642103f3dd6a2645873c928d6a4",
+  "cleanMachineValidationSummary": {
+    "path": "validation/clean-machine-validation-summary.json",
+    "status": "windows_linux_replay_validated"
+  },
+  "noSecretScanResult": {
+    "path": "validation/no-secret-scan-result.json",
+    "status": "pass"
+  },
+  "feat136ReuseNotes": {
+    "receiptImportImplementedHere": false,
+    "goodSamplePackageRef": "packages/sample-good-finalized-election",
+    "reuseInstruction": "FEAT-136 may reuse the good sample package shape and extend it with cross-device receipt inclusion fixtures."
+  },
+  "feat141ConsumerInstructions": {
+    "requiredRefs": [
+      "corpus-manifest.json",
+      "fixtures/fixture-index.json",
+      "packages/sample-good-finalized-election",
+      "validation/no-secret-scan-result.json",
+      "readiness/verifier-corpus-readiness-fragment.json"
+    ],
+    "observedDeliveryBoundary": "FEAT-141 must still collect real rehearsal or pilot evidence; this corpus is synthetic verifier replay evidence."
+  },
+  "residualRisk": "Does not replace pilot ceremony evidence, real deployment observation, external validation, or legal/regulatory approval."
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp08-mutable-artifact-reference",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "release_integrity_mutable_artifact_reference"
+  ],
+  "requiredCheckStatuses": {
+    "REL-003": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:919a0e2cd5ae62b41441036d4fa236feef5a6124fd17ec1c63f0ca57d9bf2bcd"
+  },
+  "normalizedOutputHash": "sha256:f2dc58dea023bdaea8dfbfa57de3dd8648b29b93f8b632567d9f59eb5aa48bec",
+  "outputRef": "validation/verifier-output/tamper-sp08-mutable-artifact-reference/VerifierOutput.json"
+}

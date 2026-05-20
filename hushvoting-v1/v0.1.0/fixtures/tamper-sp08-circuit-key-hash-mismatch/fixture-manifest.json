@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp08-circuit-key-hash-mismatch",
+  "fixtureFamily": "sp08_release_integrity",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp08-circuit-key-hash-mismatch",
+  "packageHash": "sha256:06675086baf642c43a2f187f1a7cb9b457a9f0c85c732a71be9d8b992bddb035",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks circuit and key digest shape."
+  },
+  "changedArtifact": "artifacts/election-record/release-manifest.json",
+  "expectedPrimaryResultCode": "release_integrity_circuit_or_package_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp08-circuit-key-hash-mismatch.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp08-circuit-key-hash-mismatch",
+    "output": "validation/verifier-output/tamper-sp08-circuit-key-hash-mismatch"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

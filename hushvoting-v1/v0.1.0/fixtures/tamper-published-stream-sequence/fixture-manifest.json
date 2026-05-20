@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-published-stream-sequence",
+  "fixtureFamily": "published_ballots",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-published-stream-sequence",
+  "packageHash": "sha256:fa4000f59a18952d77caa69ff6afa6b868c1a314502f61b9df2d0d2bb98457b9",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks the published ballot stream sequence."
+  },
+  "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+  "expectedPrimaryResultCode": "published_ballot_sequence_invalid",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-published-stream-sequence.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-published-stream-sequence",
+    "output": "validation/verifier-output/tamper-published-stream-sequence"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

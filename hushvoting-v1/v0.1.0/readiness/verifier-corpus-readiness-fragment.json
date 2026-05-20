@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "verifier-corpus-readiness-fragment.v1",
+  "fragmentId": "AT-RDY-007-v0.1.0",
+  "featureSlice": "public-verifier-sample-and-tamper-corpus",
+  "sourceGap": "Verifier/sample/tamper corpus",
+  "acceptanceGate": "AT-RDY-007",
+  "dimensionId": "RDY-DIM-002",
+  "evidenceRefs": [
+    {
+      "path": "corpus-manifest.json",
+      "sha256Hash": "sha256:a4e9f7f8a4e62b8611e22410da2400f2d22e7d22ab585bb50a0b997745301b64"
+    },
+    {
+      "path": "fixtures/fixture-index.json",
+      "sha256Hash": "sha256:98e2e876f798f553340d91c2d12fe9036c16b91d5726a40f36c332d7ae11a200"
+    },
+    {
+      "path": "packages/sample-good-finalized-election",
+      "sha256Hash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36"
+    },
+    {
+      "path": "validation/no-secret-scan-result.json",
+      "status": "pass"
+    }
+  ],
+  "checkResults": [
+    {
+      "checkId": "good-sample-pass",
+      "status": "pass",
+      "exitCode": 0
+    },
+    {
+      "checkId": "tamper-fixtures-present",
+      "status": "pass",
+      "count": 23
+    },
+    {
+      "checkId": "unexpected-public-material",
+      "status": "pass",
+      "unexpectedFindingCount": 0
+    }
+  ],
+  "status": "accepted",
+  "visibility": "public",
+  "claimEffect": "Candidate evidence for the readiness register only; register promotion remains owned by FEAT-130.",
+  "residualRisk": "Synthetic corpus does not prove operating history, customer election delivery, cross-device receipt import, or external review.",
+  "doesNotMutateRegister": true,
+  "promotionInstructions": "FEAT-130 may ingest this fragment after maintainer review of the public corpus output and hashes.",
+  "supersessionRules": [
+    "verifier source ref changes",
+    "Protocol Omega package version changes",
+    "verification package schema changes",
+    "verifier result-code contract changes",
+    "SP-07 publication proof contract changes",
+    "SP-08 release integrity contract changes",
+    "SP-10 operational evidence contract changes",
+    "corpus schema changes"
+  ]
+}

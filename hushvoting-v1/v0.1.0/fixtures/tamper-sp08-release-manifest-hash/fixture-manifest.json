@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp08-release-manifest-hash",
+  "fixtureFamily": "sp08_release_integrity",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp08-release-manifest-hash",
+  "packageHash": "sha256:a235a6ad261fe92cb23faea751daf207b281b39cdaa8a3695c75d98120c86cc8",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes release manifest content without preserving integrity binding."
+  },
+  "changedArtifact": "artifacts/election-record/release-manifest.json",
+  "expectedPrimaryResultCode": "release_integrity_manifest_missing",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp08-release-manifest-hash.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp08-release-manifest-hash",
+    "output": "validation/verifier-output/tamper-sp08-release-manifest-hash"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

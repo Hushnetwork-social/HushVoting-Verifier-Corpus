@@ -1,0 +1,18 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "eligibilityPolicyId": "organizational_eligibility_checkoff_v1",
+  "eligibilityPolicyVersion": "1.0.0",
+  "eligibilityMutationPolicy": "frozenAtOpen",
+  "identityLinkPolicy": "contactCodeV1",
+  "checkoffVisibilityPolicy": "restrictedOwnerAuditor",
+  "actorLinkMultiplicityPolicy": "singleRosterEntryPerActor",
+  "contactCodeProviderReadiness": "ready",
+  "rosterCanonicalizationVersion": "hush_roster_canonicalization_v1",
+  "rosterCanonicalizationVersionHash": "a99e986c6935587c6a75ebf5097e4f3ed52e8749a378588532b77de2ec3c5c34",
+  "eligibilityPolicyCanonicalizationVersion": "hush_eligibility_policy_canonical_v1",
+  "eligibilityPolicyCanonicalizationVersionHash": "d2ce2c975af0a32f0e8ad792ed977d0635ed341e57806e36cf8dd99a5944f05a",
+  "commitmentSchemeVersion": "hush_vote_commitment_preimage_v1",
+  "commitmentSchemeVersionHash": "6fd26bebeecc334ef432f9b0f94cda3e0945a5a95f6d75cb54d0d3b4f33e87e0",
+  "nullifierSchemeVersion": "hush_vote_nullifier_preimage_v1",
+  "nullifierSchemeVersionHash": "a24b546ac3779c7f51356ee24a428062a9fb3946014ac99979218c6871c43c4c"
+}

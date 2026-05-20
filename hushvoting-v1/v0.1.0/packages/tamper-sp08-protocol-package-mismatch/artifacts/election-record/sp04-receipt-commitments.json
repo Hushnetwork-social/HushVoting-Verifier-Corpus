@@ -1,0 +1,18 @@
+[
+  {
+    "acceptedBallotId": "66c25c7b-2fdd-4dc2-86d1-b9ce5abf3e6b",
+    "preparedBallotId": "1ef0ac29-11e2-4271-b301-b6be91934f0c",
+    "acceptedAt": "2026-05-19T23:34:00Z",
+    "preparedBallotHash": "prepared-final-b",
+    "receiptCommitment": "receipt-b",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  },
+  {
+    "acceptedBallotId": "ab2e6a0b-62b9-4a2a-a07d-65da60d3e3ab",
+    "preparedBallotId": "e1be878a-cc73-4abd-a428-898745de47bc",
+    "acceptedAt": "2026-05-19T23:34:00Z",
+    "preparedBallotHash": "prepared-final-a",
+    "receiptCommitment": "receipt-a",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  }
+]

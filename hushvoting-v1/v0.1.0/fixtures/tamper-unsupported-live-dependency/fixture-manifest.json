@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-unsupported-live-dependency",
+  "fixtureFamily": "profile_input",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "https://example.invalid/hushvoting-public-verifier-corpus/package",
+  "packageHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Uses a live URL package path, which the verifier must reject in v1."
+  },
+  "changedArtifact": "package-path",
+  "expectedPrimaryResultCode": "unsupported_live_dependency",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-unsupported-live-dependency.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "https://example.invalid/hushvoting-public-verifier-corpus/package",
+    "output": "validation/verifier-output/tamper-unsupported-live-dependency"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

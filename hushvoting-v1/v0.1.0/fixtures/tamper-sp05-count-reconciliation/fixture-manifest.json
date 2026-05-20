@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp05-count-reconciliation",
+  "fixtureFamily": "sp05_public_boundary",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-sp05-count-reconciliation",
+  "packageHash": "sha256:4c203685fdb4d89300662c02d93fe4e09ce22a7767c8b30d73c22327cdcbf99d",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks SP-05 public count reconciliation."
+  },
+  "changedArtifact": "artifacts/election-record/eligibility-summary.json",
+  "expectedPrimaryResultCode": "eligibility_count_reconciliation_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp05-count-reconciliation.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp05-count-reconciliation",
+    "output": "validation/verifier-output/tamper-sp05-count-reconciliation"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

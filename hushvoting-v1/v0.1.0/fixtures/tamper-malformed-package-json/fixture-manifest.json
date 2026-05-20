@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-malformed-package-json",
+  "fixtureFamily": "package_manifest",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-malformed-package-json",
+  "packageHash": "sha256:e3bed2917775247fc5b19c156a99b6394fe78ac9dc8825319d38a219f6185b4a",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Replaces the election record JSON with malformed content."
+  },
+  "changedArtifact": "ElectionRecord.json",
+  "expectedPrimaryResultCode": "package_unparseable",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "notAvailable",
+  "expectedExitCode": 2,
+  "expectedOutputRef": "expected-results/tamper-malformed-package-json.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-malformed-package-json",
+    "output": "validation/verifier-output/tamper-malformed-package-json"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

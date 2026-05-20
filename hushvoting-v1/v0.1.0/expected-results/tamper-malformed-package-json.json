@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-malformed-package-json",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "notAvailable",
+  "expectedExitCode": 2,
+  "requiredResultCodes": [
+    "package_unparseable"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-PKG-002": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "unparseable",
+    "electionId": "unparseable",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "notAvailable",
+    "packageHash": "sha256:e3bed2917775247fc5b19c156a99b6394fe78ac9dc8825319d38a219f6185b4a"
+  },
+  "normalizedOutputHash": "sha256:572a7ad7233bb81884153dc711c38f23aa8196cf3474f39f691b8319ec1a480b",
+  "outputRef": "validation/verifier-output/tamper-malformed-package-json/VerifierOutput.json"
+}

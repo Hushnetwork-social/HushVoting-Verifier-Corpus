@@ -1,0 +1,30 @@
+{
+  "trusteeCount": 0,
+  "trusteeThreshold": 0,
+  "acceptedBeforeOpenCount": 0,
+  "completeEvidenceCount": 0,
+  "missingEvidenceCount": 0,
+  "staleEvidenceCount": 0,
+  "incompatibleEvidenceCount": 0,
+  "acceptedReleaseArtifactCount": 0,
+  "missingReleaseArtifactCount": 0,
+  "rejectedReleaseArtifactCount": 0,
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "controlDomainProfileId": "not_applicable",
+  "controlDomainProfileVersion": "not_applicable",
+  "thresholdProfileId": "admin-prod-1of1",
+  "finalEncryptedTallyHash": "not_available",
+  "targetTallyId": "not_available",
+  "executorSessionPublicKeyHash": null,
+  "executorKeyAlgorithm": null,
+  "trustees": [],
+  "readinessBlockers": [],
+  "publicPrivacyBoundary": [
+    "no_trustee_account_id",
+    "no_trustee_person_ref",
+    "no_custody_domain_ref",
+    "no_admin_domain_ref",
+    "no_raw_trustee_share",
+    "no_private_key"
+  ]
+}

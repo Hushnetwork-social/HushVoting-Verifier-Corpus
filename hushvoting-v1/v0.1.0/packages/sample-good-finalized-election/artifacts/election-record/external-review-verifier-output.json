@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-05-20T00:00:00Z",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "schema": "HushVotingExternalReviewVerifierOutput-v1",
+  "results": [
+    {
+      "checkCode": "REV-000",
+      "status": "pass",
+      "resultCode": "external_review_status_valid",
+      "message": "External review status shape is valid and claim state matches available evidence.",
+      "evidence": {
+        "review_status": "not_started",
+        "review_availability": "planned",
+        "claim_state": "program_defined"
+      }
+    },
+    {
+      "checkCode": "REV-002",
+      "status": "warn",
+      "resultCode": "external_review_not_complete",
+      "message": "External examination program is defined; no reviewer conclusion is available.",
+      "evidence": {
+        "program_version": "SP09-P1",
+        "review_scope": "protocol_proof_verifier_publication_path_v1"
+      }
+    }
+  ]
+}

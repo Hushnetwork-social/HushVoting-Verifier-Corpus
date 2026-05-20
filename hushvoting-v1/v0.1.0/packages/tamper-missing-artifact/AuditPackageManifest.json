@@ -1,0 +1,329 @@
+{
+  "manifestVersion": "1.0",
+  "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "packageView": "publicAnonymous",
+  "verifierProfileId": "public_anonymous_v1",
+  "createdAt": "2026-05-20T00:00:00Z",
+  "entries": [
+    {
+      "path": "ElectionRecord.json",
+      "sha256Hash": "ce60c3e72d6ae9550d56bc7bd482dce4e5645c18fbea37f059c1885d5f7f6487",
+      "sizeBytes": 992,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "VerifierProfile.json",
+      "sha256Hash": "4343c0fb7ee1f076f558f4da0304c43eb4621253b0bc61c68b38223e0ddbdb3e",
+      "sizeBytes": 473,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/accepted-ballot-set.json",
+      "sha256Hash": "3a8295689c8c88085b4ffbd02b0da645af2bfbb3e873d4f50eeed1f7cb6c8fe7",
+      "sizeBytes": 1630,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/eligibility-policy.json",
+      "sha256Hash": "65f59ebe8117b496e0dcc783f419a258b66a3a1f2a27fe44238d8db8749fc2c5",
+      "sizeBytes": 1140,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/eligibility-summary.json",
+      "sha256Hash": "4330678dfa490af3f5b318c8e927728a50e84185dc0d4ea6f989824566ce69aa",
+      "sizeBytes": 1065,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/eligibility-verifier-output.json",
+      "sha256Hash": "a788a8f7c98efd77ca6e809b7f9781440a8b5998a545f0d837d56641cf5012c4",
+      "sizeBytes": 982,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/external-review-claim-table.json",
+      "sha256Hash": "92680bcccb4fda9dd4301f2efd0aee852349b081a26a127bce9c99d10ac5735a",
+      "sizeBytes": 3124,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/external-review-status.json",
+      "sha256Hash": "f3f179fb86a714e618a245eaa36c7557f07b2a84bcb8ffd9e4778dde924d6e4e",
+      "sizeBytes": 2052,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/external-review-verifier-output.json",
+      "sha256Hash": "8e21c33d1664794e299ce7337f1e566364f4a251d66a4aa3d43b69ddc847a48b",
+      "sizeBytes": 973,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/operational-custody-evidence.json",
+      "sha256Hash": "fb19230d70210fec546c8d8f22334b7216708e05570a52b709034f0603baee21",
+      "sizeBytes": 1088,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/operational-deployment-evidence.json",
+      "sha256Hash": "069c971cd77ad37a6b21f9cc3f61f905d0ccf8999e184d7a82a398b4bf91af24",
+      "sizeBytes": 1371,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/operational-security-summary.json",
+      "sha256Hash": "71a806e7bfc39eb483112f9caed6692f5a27bf5caf0a318e56c62a791709bab9",
+      "sizeBytes": 2079,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/operational-verifier-output.json",
+      "sha256Hash": "54634c8649120ef2f87bd29a99e0c1ed6c22469de64fb39b63f7e2157ca9cf94",
+      "sizeBytes": 2521,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/publication-proof-transcript.json",
+      "sha256Hash": "a2cfcd8bc72fcf0f38689e66198f65ca75ba5f83c00d5e8cfebe0fefa4326f47",
+      "sizeBytes": 1636,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/publication-proof-verifier-output.json",
+      "sha256Hash": "91d52ef7ca88048bfce57b8a3570a0551942fe622db6b35ccbd9a39d42e3d70e",
+      "sizeBytes": 855,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/published-ballot-stream.json",
+      "sha256Hash": "5c5083cbaf91cb8d0e1918f8cb24ec1a10b2ba3536d30898fbbb9c689a3e4daf",
+      "sizeBytes": 874,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/release-integrity-verifier-output.json",
+      "sha256Hash": "d45dee1075835d36f0c96c84120fc415fdb04e761d0d53ca97904a9928efabdf",
+      "sizeBytes": 577,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/release-integrity.json",
+      "sha256Hash": "05e62f5004f5cf964ab6d68c2ed2b156b2d50c2c1b1dc800e302dd40f2e74ff8",
+      "sizeBytes": 6884,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/release-manifest.json",
+      "sha256Hash": "ff18ce965abee094534d5f44aaa9a2ac3c7805a5db4a5b68e878d82c12f6ebeb",
+      "sizeBytes": 7189,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/result-binding.json",
+      "sha256Hash": "61f5c7caba79c49628b105a7320d62858cf535d33dea4c5678a931b13d099c11",
+      "sizeBytes": 423,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/sp04-evidence.json",
+      "sha256Hash": "7647ccd9eac0746b81cc2afe097b4dc3a5260d0dc07e39c63df2c153cd098525",
+      "sizeBytes": 759,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/sp04-receipt-commitments.json",
+      "sha256Hash": "d1439ab25f19f9de8e8fbeb65f20e37e4151ba335401500faad950c66c9cc5a1",
+      "sizeBytes": 737,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/tally-replay.json",
+      "sha256Hash": "3d245578b7df48199242f18570197dffc76fb508b0f8f596ab861b423bc42d89",
+      "sizeBytes": 697,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/trustee-control-profile.json",
+      "sha256Hash": "e0e586bb56ecbb28407e7e1ec197e51a2e1899aa04f73d23683545af9499b652",
+      "sizeBytes": 520,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/trustee-control-summary.json",
+      "sha256Hash": "a3a8fdb3bd02e06531d5a9c5c3c066202b09b803026fffa0f1b553daa8d31c64",
+      "sizeBytes": 931,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/trustee-release-evidence.json",
+      "sha256Hash": "215441296e7c89f1714d2ed1bf3836be53ae4694a02784cef7e00ab4626b09ff",
+      "sizeBytes": 147,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/trustee-verifier-output.json",
+      "sha256Hash": "675d051e1bbec3e31a42daae72768c9443e6cbbc8547a6a8b2828a3d46e18d67",
+      "sizeBytes": 778,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/election-record/witness-deletion-receipt.json",
+      "sha256Hash": "358c1d0498aac7ffe793539f9ed6a215c9d4a57fbb070c7be07a3d60a413d25b",
+      "sizeBytes": 529,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    },
+    {
+      "path": "artifacts/report-package/canonical-manifest.json",
+      "sha256Hash": "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93",
+      "sizeBytes": 11,
+      "mediaType": "application/json",
+      "visibility": "public",
+      "requirement": "required",
+      "requiredProfileIds": [
+        "public_anonymous_v1"
+      ]
+    }
+  ]
+}

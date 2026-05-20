@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-duplicate-nullifier",
+  "fixtureFamily": "accepted_ballots",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-duplicate-nullifier",
+  "packageHash": "sha256:b8b5d348676782dc187c124e2ee4ff4fe228106e536b11ff3dd79af6edfaa467",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Duplicates a ballot nullifier in the accepted set."
+  },
+  "changedArtifact": "artifacts/election-record/accepted-ballot-set.json",
+  "expectedPrimaryResultCode": "accepted_ballot_duplicate_nullifier",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-duplicate-nullifier.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-duplicate-nullifier",
+    "output": "validation/verifier-output/tamper-duplicate-nullifier"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

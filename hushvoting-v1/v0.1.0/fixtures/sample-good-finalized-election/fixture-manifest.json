@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "sample-good-finalized-election",
+  "fixtureFamily": "good_sample",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/sample-good-finalized-election",
+  "packageHash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36",
+  "mutation": {
+    "mutationType": "none",
+    "description": "No mutation. This is the passing synthetic finalized package."
+  },
+  "changedArtifact": "none",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedCheckStatus": "pass",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "expectedOutputRef": "expected-results/sample-good-finalized-election.json",
+  "proofStatement": "Synthetic finalized public package passes the public anonymous verifier.",
+  "secondaryFailuresAllowed": false,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/sample-good-finalized-election",
+    "output": "validation/verifier-output/sample-good-finalized-election"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

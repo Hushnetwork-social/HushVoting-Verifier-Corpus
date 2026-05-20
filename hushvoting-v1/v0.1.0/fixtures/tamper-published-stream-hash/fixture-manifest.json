@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-published-stream-hash",
+  "fixtureFamily": "published_ballots",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "packagePath": "packages/tamper-published-stream-hash",
+  "packageHash": "sha256:7ae798810754d4f19d814e2b42ca22cf9a4d0a0ed2a03eb27ce7481b52c91205",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes the published ballot stream hash."
+  },
+  "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+  "expectedPrimaryResultCode": "published_ballot_stream_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-published-stream-hash.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-published-stream-hash",
+    "output": "validation/verifier-output/tamper-published-stream-hash"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}
