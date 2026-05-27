@@ -1,0 +1,20 @@
+{
+  "schema": "hushvoting.receipt.export",
+  "schemaVersion": 1,
+  "receiptProof": {
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "receiptCommitment": "receipt-a",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+    "preparedBallotHash": "prepared-final-a",
+    "ballotDefinitionVersion": 1,
+    "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc=",
+    "expectedPackageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "expectedPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+    "expectedVerifierProfileId": "public_anonymous_v1"
+  },
+  "exportEnvelope": {
+    "receiptGeneratedAt": "2026-05-21T10:00:00Z",
+    "exportedBy": "HushVoting",
+    "exporterVersion": "feat-152-channel-matrix-fixture"
+  }
+}

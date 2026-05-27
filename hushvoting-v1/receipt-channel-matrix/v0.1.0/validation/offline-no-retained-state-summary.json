@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "receipt-channel-offline-no-retained-state.v1",
+  "featureId": "FEAT-152",
+  "status": "pass",
+  "validatedAt": "2026-05-27T23:20:00Z",
+  "evidence": [
+    {
+      "claim": "Receipt channel payloads decode without localStorage, cookies, authenticated user state, or original voting session state.",
+      "mechanism": "decodeReceiptChannelPayload parses the supplied HVR1 payload bytes and returns receipt JSON directly from the pasted payload.",
+      "status": "pass"
+    },
+    {
+      "claim": "Final counted-inclusion verification still requires local package ZIP bytes supplied by the reviewer.",
+      "mechanism": "PublicReceiptVerifier keeps the package ZIP input visible and blocks verification until package bytes are supplied.",
+      "status": "pass"
+    },
+    {
+      "claim": "The verifier does not call a public server endpoint for QR/manual lookup.",
+      "mechanism": "Payload decode and package verification are browser-local and covered by focused component tests.",
+      "status": "pass"
+    }
+  ],
+  "residualRisk": "A future true short-code lookup feature would need a separate proof/lookup design and server privacy review."
+}

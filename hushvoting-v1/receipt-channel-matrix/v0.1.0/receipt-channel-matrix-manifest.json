@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "receipt-channel-matrix-manifest.v1",
+  "manifestId": "FEAT-152-receipt-channel-matrix-v0.1.0",
+  "featureId": "FEAT-152",
+  "status": "accepted",
+  "generatedAt": "2026-05-27T23:20:00Z",
+  "baselineInputs": {
+    "receiptProofFeature": "FEAT-136",
+    "verifierCorpusFeature": "FEAT-151",
+    "verifierCorpusVersion": "v0.2.0",
+    "goodPackageRef": "hushvoting-v1/v0.2.0/packages/sample-good-finalized-election",
+    "goodPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc"
+  },
+  "payloadContract": {
+    "schema": "hushvoting.receipt.channel-payload",
+    "schemaVersion": 1,
+    "prefix": "HVR1",
+    "encoding": "base64url-json-plus-first-16-hex-sha256-checksum",
+    "channels": [
+      "qr_ready",
+      "manual_payload"
+    ]
+  },
+  "fixtures": [
+    {
+      "fixtureId": "file-package-bound",
+      "channel": "file_receipt_json",
+      "path": "fixtures/receipt-file-package-bound.json",
+      "expectedResult": "verified_included"
+    },
+    {
+      "fixtureId": "qr-ready-package-bound",
+      "channel": "qr_ready_payload",
+      "path": "fixtures/receipt-qr-ready-payload.txt",
+      "expectedResult": "verified_included"
+    },
+    {
+      "fixtureId": "manual-payload-package-bound",
+      "channel": "manual_payload",
+      "path": "fixtures/receipt-manual-payload.txt",
+      "expectedResult": "verified_included"
+    },
+    {
+      "fixtureId": "qr-ready-invalid-checksum",
+      "channel": "qr_ready_payload",
+      "path": "fixtures/receipt-invalid-checksum-payload.txt",
+      "expectedResult": "invalid_receipt"
+    }
+  ],
+  "validation": [
+    "validation/result-category-stability-summary.json",
+    "validation/browser-device-accessibility-summary.json",
+    "validation/offline-no-retained-state-summary.json",
+    "validation/no-secret-scan-result.json"
+  ],
+  "readiness": [
+    "readiness/receipt-channel-matrix-readiness-fragment.json",
+    "readiness/receipt-channel-matrix-score-proposal.json"
+  ],
+  "handoff": "handoff/receipt-channel-matrix-downstream-handoff.json"
+}

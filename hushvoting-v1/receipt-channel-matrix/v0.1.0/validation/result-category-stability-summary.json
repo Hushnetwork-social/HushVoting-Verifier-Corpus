@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "receipt-channel-result-category-stability.v1",
+  "featureId": "FEAT-152",
+  "status": "pass",
+  "validatedAt": "2026-05-27T23:20:00Z",
+  "focusedTestCommand": "npm run test:run -- src/modules/elections/receiptVerification src/modules/elections/PublicReceiptVerifier.test.tsx",
+  "focusedTestResult": {
+    "status": "pass",
+    "testFilesPassed": 5,
+    "testsPassed": 43
+  },
+  "resultCategoriesPreserved": [
+    "verified_included",
+    "verified_included_with_warnings",
+    "not_found",
+    "wrong_package",
+    "invalid_receipt",
+    "invalid_package",
+    "package_unavailable",
+    "verification_unavailable"
+  ],
+  "channelResults": [
+    {
+      "channel": "file_receipt_json",
+      "fixture": "fixtures/receipt-file-package-bound.json",
+      "expectedResult": "verified_included",
+      "status": "pass"
+    },
+    {
+      "channel": "qr_ready_payload",
+      "fixture": "fixtures/receipt-qr-ready-payload.txt",
+      "expectedResult": "verified_included",
+      "status": "pass"
+    },
+    {
+      "channel": "manual_payload",
+      "fixture": "fixtures/receipt-manual-payload.txt",
+      "expectedResult": "verified_included",
+      "status": "pass"
+    },
+    {
+      "channel": "qr_ready_payload",
+      "fixture": "fixtures/receipt-invalid-checksum-payload.txt",
+      "expectedResult": "invalid_receipt",
+      "status": "pass"
+    }
+  ],
+  "notes": "QR and manual payloads decode into the same FEAT-136 receipt export before calling the browser-local package verifier."
+}
