@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "publication-counting-package-hash-currentness-summary.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "status": "accepted",
+  "sourceRelease": {
+    "corpusFamily": "hushvoting-v1",
+    "corpusVersion": "v0.2.0",
+    "status": "accepted",
+    "publicPath": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/",
+    "manifestHash": "sha256:bd6d7d179368fbb7a13811d2fea497ad68306efd949a8178778ca2890554a48c",
+    "fixtureIndexHash": "sha256:2b2646bf025b7a2f38e9fc2935c4e89879bcc930aeb47d29a72657cdc92354fb",
+    "goodPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+    "resultCodeStabilityStatus": "accepted",
+    "cleanMachineValidationStatus": "windows_linux_replay_validated",
+    "noSecretScanStatus": "pass"
+  },
+  "packageRefs": {
+    "fixtureId": "sample-good-finalized-election",
+    "packagePath": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/packages/sample-good-finalized-election",
+    "packageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+    "expectedResultRef": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/expected-results/sample-good-finalized-election.json",
+    "expectedResultHash": "sha256:61536eca62fd15e9e03594eb27fb08eefabed19db38426e1ee01cffb710623bc",
+    "expectedOverallStatus": "pass",
+    "expectedExitCode": 0,
+    "requiredArtifacts": [
+      {
+        "artifactId": "accepted-ballot-set",
+        "path": "artifacts/election-record/accepted-ballot-set.json",
+        "role": "Accepted ballot inventory used before publication."
+      },
+      {
+        "artifactId": "published-ballot-stream",
+        "path": "artifacts/election-record/published-ballot-stream.json",
+        "role": "Published ballot stream that must reconcile with accepted ballots and result binding."
+      },
+      {
+        "artifactId": "publication-proof-transcript",
+        "path": "artifacts/election-record/publication-proof-transcript.json",
+        "role": "SP-07 publication proof transcript."
+      },
+      {
+        "artifactId": "publication-proof-verifier-output",
+        "path": "artifacts/election-record/publication-proof-verifier-output.json",
+        "role": "Verifier output for the publication proof transcript."
+      },
+      {
+        "artifactId": "tally-replay",
+        "path": "artifacts/election-record/tally-replay.json",
+        "role": "Public tally replay binding for counted ciphertexts."
+      },
+      {
+        "artifactId": "trustee-release-evidence",
+        "path": "artifacts/election-record/trustee-release-evidence.json",
+        "role": "Trustee release evidence used by final tally verification."
+      },
+      {
+        "artifactId": "trustee-verifier-output",
+        "path": "artifacts/election-record/trustee-verifier-output.json",
+        "role": "Verifier output for trustee release checks."
+      },
+      {
+        "artifactId": "result-binding",
+        "path": "artifacts/election-record/result-binding.json",
+        "role": "Final result binding that must stay aligned with published counted set and expected result."
+      },
+      {
+        "artifactId": "release-integrity",
+        "path": "artifacts/election-record/release-integrity.json",
+        "role": "Current protocol/verifier release binding."
+      },
+      {
+        "artifactId": "release-manifest",
+        "path": "artifacts/election-record/release-manifest.json",
+        "role": "Current release manifest binding for verifier and protocol refs."
+      }
+    ]
+  },
+  "protocolRefs": {
+    "packageId": "omega-hushvoting-v1",
+    "packageVersion": "v1.2.0",
+    "source": "https://github.com/Hushnetwork-social/protocol-omega-packages",
+    "profileId": "public_anonymous_v1",
+    "proofMode": "zk_rerandomization_shuffle_v1",
+    "proofConstruction": "bayer_groth_reencryption_shuffle_argument_v1",
+    "reviewLabel": "external_crypto_review_pending"
+  },
+  "verifierRefs": {
+    "repository": "https://github.com/Hushnetwork-social/hush-server-node",
+    "sourceRef": "88e7d8f4f35e21a341d9ad1b92ecc73bdba0ab15",
+    "projectPath": "Tools/HushVotingVerifier/HushVotingVerifier.csproj",
+    "runtime": ".NET 9",
+    "profileId": "public_anonymous_v1",
+    "binaryRelease": "sha256:7048677ba0c66c69c123ab7d046eb03a0d3c7642103f3dd6a2645873c928d6a4"
+  },
+  "blocksScoreMovementWhenStale": true
+}

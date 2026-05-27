@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "publication-counting-hardening-manifest.v1",
+  "packageId": "hushvoting-publication-counting-hardening",
+  "packageVersion": "v0.1.0",
+  "producerFeature": "FEAT-153",
+  "sourceId": "FEAT153-PUBLICATION-COUNTING-HARDENING-v0.1.0",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "canonicalizationVersion": "publication-counting-hardening-canonical-json.v1",
+  "sourceRelease": {
+    "corpusFamily": "hushvoting-v1",
+    "corpusVersion": "v0.2.0",
+    "status": "accepted",
+    "publicPath": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/",
+    "manifestHash": "sha256:bd6d7d179368fbb7a13811d2fea497ad68306efd949a8178778ca2890554a48c",
+    "fixtureIndexHash": "sha256:2b2646bf025b7a2f38e9fc2935c4e89879bcc930aeb47d29a72657cdc92354fb",
+    "goodPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+    "resultCodeStabilityStatus": "accepted",
+    "cleanMachineValidationStatus": "windows_linux_replay_validated",
+    "noSecretScanStatus": "pass"
+  },
+  "protocolRefs": {
+    "packageId": "omega-hushvoting-v1",
+    "packageVersion": "v1.2.0",
+    "source": "https://github.com/Hushnetwork-social/protocol-omega-packages",
+    "profileId": "public_anonymous_v1",
+    "proofMode": "zk_rerandomization_shuffle_v1",
+    "proofConstruction": "bayer_groth_reencryption_shuffle_argument_v1",
+    "reviewLabel": "external_crypto_review_pending"
+  },
+  "verifierRefs": {
+    "repository": "https://github.com/Hushnetwork-social/hush-server-node",
+    "sourceRef": "88e7d8f4f35e21a341d9ad1b92ecc73bdba0ab15",
+    "projectPath": "Tools/HushVotingVerifier/HushVotingVerifier.csproj",
+    "runtime": ".NET 9",
+    "profileId": "public_anonymous_v1",
+    "binaryRelease": "sha256:7048677ba0c66c69c123ab7d046eb03a0d3c7642103f3dd6a2645873c928d6a4"
+  },
+  "publicBoundaryStatement": "The FEAT-153 public package may include hashes, fixture ids, result codes, verifier refs, package refs, and readiness proposal metadata only. It must not copy private election material or operational secrets.",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256Hash": "sha256:763ffea9cc2e26630c2f13c9c81f1563cd423754ac94b034d94972d4da9a7055",
+      "publicSafe": true
+    },
+    {
+      "path": "validation/package-verifier-replay-summary.json",
+      "sha256Hash": "sha256:182db224c013507f1a5e124e381d86c2d046789b50123e6e30b54e1c7f11f5b9",
+      "publicSafe": true
+    },
+    {
+      "path": "validation/accepted-to-published-binding-summary.json",
+      "sha256Hash": "sha256:ba208428099ce66bcf2f35514ef37b13ec64596fff67dbf1c4ea3b75d9d16461",
+      "publicSafe": true
+    },
+    {
+      "path": "validation/tally-replay-binding-summary.json",
+      "sha256Hash": "sha256:25053bab8fdad1008a6a6540a32ed7188b504db5d8afd7cf9e48a18d47e1a921",
+      "publicSafe": true
+    },
+    {
+      "path": "validation/tamper-stale-replay-summary.json",
+      "sha256Hash": "sha256:69f01e5afea778d1af7bc61de536419423cc1a8153ab88be67c9640d943000a6",
+      "publicSafe": true
+    },
+    {
+      "path": "validation/package-hash-currentness-summary.json",
+      "sha256Hash": "sha256:9aa06a792e79739d83fb9869ba38b171cd8712f6375f8d95ab59a4d22bca843d",
+      "publicSafe": true
+    },
+    {
+      "path": "validation/no-secret-scan-result.json",
+      "sha256Hash": "sha256:ea66a16b70f6d34d016ef489f2953ccd0a0e0f5c19844c7f465ac6775a33a8db",
+      "publicSafe": true
+    },
+    {
+      "path": "readiness/publication-counting-readiness-fragment.json",
+      "sha256Hash": "sha256:ecb19cd458d87c6f82beed9ed26df7d56a433c2c2c08708001b8929976474e6f",
+      "publicSafe": true
+    },
+    {
+      "path": "readiness/publication-counting-score-proposal.json",
+      "sha256Hash": "sha256:00cc92f33a865990282148202ab7c8df200d9c86bfef8ebc51e18d1a5b0fb2a7",
+      "publicSafe": true
+    },
+    {
+      "path": "handoff/publication-counting-hardening-downstream-handoff.json",
+      "sha256Hash": "sha256:13ee2d0cb29ba0adcaa44ffa8bf152a336342ec0ef7a479edd527db3dcf91227",
+      "publicSafe": true
+    }
+  ]
+}

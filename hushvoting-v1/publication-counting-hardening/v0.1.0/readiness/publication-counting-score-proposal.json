@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "publication-counting-score-proposal.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "producerFeature": "FEAT-153",
+  "proposal": {
+    "dimensionId": "RDY-DIM-004",
+    "proposedScoreFrom": 7,
+    "proposedScoreTo": 8,
+    "doesNotMutateRegister": true,
+    "promotionOwner": "FEAT-156 or later explicit FEAT-130 promotion",
+    "requiredPassingChecks": [
+      "AT-PUB-001-accepted-set-current",
+      "AT-PUB-002-published-stream-current",
+      "AT-PUB-003-publication-proof-bound",
+      "AT-TALLY-001-count-reconciliation",
+      "AT-TALLY-002-trustee-release-bound",
+      "AT-TALLY-003-final-result-current",
+      "TM-PROTOCOL-PACKAGE-DRIFT",
+      "TM-VERIFIER-BINARY-DRIFT",
+      "TM-VERIFIER-SOURCE-DRIFT",
+      "TM-PUBLIC-FORBIDDEN-MATERIAL"
+    ],
+    "nonClaims": [
+      "No direct readiness-register mutation",
+      "No production rollout claim",
+      "No public or state election readiness claim",
+      "No legal sufficiency claim",
+      "No external crypto-review completion claim",
+      "No unlimited election scale claim"
+    ]
+  },
+  "registerMutation": "not_performed"
+}

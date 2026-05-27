@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "publication-counting-tally-replay-binding-summary.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "status": "accepted",
+  "errorCount": 0,
+  "errors": [],
+  "diagnostics": {
+    "packagePath": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/packages/sample-good-finalized-election",
+    "checkedArtifactPaths": [
+      "artifacts/election-record/published-ballot-stream.json",
+      "artifacts/election-record/tally-replay.json",
+      "artifacts/election-record/trustee-release-evidence.json",
+      "artifacts/election-record/trustee-verifier-output.json",
+      "artifacts/election-record/result-binding.json"
+    ]
+  },
+  "checks": [
+    {
+      "checkId": "AT-TALLY-001-count-reconciliation",
+      "status": "pass",
+      "purpose": "Published counted set, eligibility totals, and tally replay stay reconciled.",
+      "requiredArtifactIds": [
+        "published-ballot-stream",
+        "tally-replay",
+        "result-binding"
+      ],
+      "mustBind": [
+        "published_counted_set_hash",
+        "eligibility_count",
+        "tally_replay_count",
+        "result_binding_count"
+      ],
+      "validFixtureIds": [
+        "sample-good-finalized-election",
+        "sample-good-larger-electorate",
+        "sample-good-low-turnout"
+      ],
+      "tamperFixtureIds": [
+        "tamper-sp05-count-reconciliation",
+        "tamper-sp04-count"
+      ],
+      "expectedFailureResultCodes": [
+        "eligibility_count_reconciliation_mismatch",
+        "challenge_spoil_count_mismatch"
+      ],
+      "blocksScoreMovementWhenFailing": true
+    },
+    {
+      "checkId": "AT-TALLY-002-trustee-release-bound",
+      "status": "pass",
+      "purpose": "Trustee release evidence remains bound to tally replay and final result refs.",
+      "requiredArtifactIds": [
+        "trustee-release-evidence",
+        "trustee-verifier-output",
+        "tally-replay"
+      ],
+      "mustBind": [
+        "trustee_release_hash",
+        "trustee_verifier_output_hash",
+        "tally_replay_hash",
+        "final_result_ref"
+      ],
+      "validFixtureIds": [
+        "sample-good-finalized-election",
+        "sample-good-trustee-threshold"
+      ],
+      "tamperFixtureIds": [
+        "tamper-sp08-circuit-key-hash-mismatch",
+        "tamper-stale-protocol-package-version"
+      ],
+      "expectedFailureResultCodes": [
+        "release_integrity_circuit_or_package_hash_mismatch"
+      ],
+      "blocksScoreMovementWhenFailing": true
+    },
+    {
+      "checkId": "AT-TALLY-003-final-result-current",
+      "status": "pass",
+      "purpose": "Final result binding and expected result refs cannot drift from the current package.",
+      "requiredArtifactIds": [
+        "result-binding",
+        "release-integrity",
+        "release-manifest"
+      ],
+      "mustBind": [
+        "result_binding_hash",
+        "expected_result_hash",
+        "protocol_package_version",
+        "verifier_source_ref",
+        "verifier_binary_hash"
+      ],
+      "validFixtureIds": [
+        "sample-good-finalized-election",
+        "sample-good-multi-option-single-winner",
+        "sample-good-trustee-threshold"
+      ],
+      "tamperFixtureIds": [
+        "tamper-expected-result-drift",
+        "tamper-stale-verifier-binary-hash",
+        "tamper-stale-verifier-source-ref"
+      ],
+      "expectedFailureResultCodes": [
+        "package_manifest_artifact_hash_mismatch",
+        "release_integrity_component_hash_mismatch"
+      ],
+      "blocksScoreMovementWhenFailing": true
+    }
+  ]
+}

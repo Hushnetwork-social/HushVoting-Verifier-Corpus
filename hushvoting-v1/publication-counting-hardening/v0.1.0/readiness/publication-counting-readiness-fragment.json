@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "publication-counting-readiness-fragment.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "producerFeature": "FEAT-153",
+  "dimensionId": "RDY-DIM-004",
+  "status": "accepted",
+  "scoreEffect": {
+    "proposedScoreFrom": 7,
+    "proposedScoreTo": 8,
+    "scoreChangeAllowed": true,
+    "doesNotMutateRegister": true
+  },
+  "evidenceRefs": [
+    "README.md",
+    "publication-counting-hardening-manifest.json",
+    "validation/package-verifier-replay-summary.json",
+    "validation/accepted-to-published-binding-summary.json",
+    "validation/tally-replay-binding-summary.json",
+    "validation/tamper-stale-replay-summary.json",
+    "validation/package-hash-currentness-summary.json",
+    "validation/no-secret-scan-result.json",
+    "readiness/publication-counting-score-proposal.json",
+    "handoff/publication-counting-hardening-downstream-handoff.json"
+  ],
+  "nonClaims": [
+    "No direct readiness-register mutation",
+    "No production rollout claim",
+    "No public or state election readiness claim",
+    "No legal sufficiency claim",
+    "No external crypto-review completion claim",
+    "No unlimited election scale claim"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "publication-counting-hardening-downstream-handoff.v1",
+  "handoffId": "FEAT-153-v0.1.0-handoff",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "producerFeature": "FEAT-153",
+  "targetPackage": "HushVoting-Verifier-Corpus/hushvoting-v1/publication-counting-hardening/v0.1.0/",
+  "consumers": [
+    "FEAT-154",
+    "FEAT-155",
+    "FEAT-156"
+  ],
+  "feat154ConsumerInstructions": "May cite this package as publication/counting hardening support only; production-like run evidence remains FEAT-154-owned.",
+  "feat155ConsumerInstructions": "May cite currentness and stale-failure policy only; failed-finalize continuity remains FEAT-155-owned.",
+  "feat156ConsumerInstructions": "May ingest the readiness fragment and score proposal after maintainer review; this package does not mutate the canonical register.",
+  "residualRisks": [
+    "FEAT-153 hardens current package and verifier binding; it does not replace FEAT-117 SP-07 proof construction.",
+    "External crypto review remains pending for the underlying proof construction.",
+    "Production-like operational evidence remains owned by FEAT-154.",
+    "Failed-finalize continuity remains owned by FEAT-155.",
+    "Canonical readiness-register promotion remains owned by FEAT-156 or a later explicit FEAT-130 promotion."
+  ]
+}

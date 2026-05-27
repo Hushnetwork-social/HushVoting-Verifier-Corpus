@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "publication-counting-package-verifier-replay-summary.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "status": "accepted",
+  "fixtureId": "sample-good-finalized-election",
+  "packagePath": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/packages/sample-good-finalized-election",
+  "packageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+  "expectedResultRef": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/expected-results/sample-good-finalized-election.json",
+  "expectedResultHash": "sha256:61536eca62fd15e9e03594eb27fb08eefabed19db38426e1ee01cffb710623bc",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "normalizedOutputHash": "sha256:b319a4b3e8f07a0bb5ee71cf8a3f7ddaeecd67dca96c7b088df7ab07b066ee8c",
+  "verifierRefs": {
+    "repository": "https://github.com/Hushnetwork-social/hush-server-node",
+    "sourceRef": "88e7d8f4f35e21a341d9ad1b92ecc73bdba0ab15",
+    "projectPath": "Tools/HushVotingVerifier/HushVotingVerifier.csproj",
+    "runtime": ".NET 9",
+    "profileId": "public_anonymous_v1",
+    "binaryRelease": "sha256:7048677ba0c66c69c123ab7d046eb03a0d3c7642103f3dd6a2645873c928d6a4"
+  }
+}

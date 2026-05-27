@@ -1,0 +1,363 @@
+{
+  "schemaVersion": "publication-counting-tamper-stale-replay-summary.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "status": "accepted",
+  "errorCount": 0,
+  "errors": [],
+  "policy": "Every stale or tampered publication/counting case must fail deterministically before RDY-DIM-004 can move.",
+  "diagnostics": {
+    "requiredCaseCount": 13,
+    "sourceCaseCount": 23,
+    "requiredCases": [
+      {
+        "caseId": "TM-STALE-MANIFEST-HASH",
+        "category": "stale_currentness",
+        "changedArtifact": "corpus-manifest.json",
+        "expectedPrimaryResultCode": "source_release_manifest_hash_mismatch",
+        "enforcement": "source-currentness-validation",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-STALE-VERIFIER-SOURCE-REF",
+        "category": "stale_currentness",
+        "changedArtifact": "corpus-manifest.json",
+        "expectedPrimaryResultCode": "verifier_source_ref_mismatch",
+        "enforcement": "source-currentness-validation",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-STALE-VERIFIER-BINARY-HASH",
+        "category": "stale_currentness",
+        "changedArtifact": "corpus-manifest.json",
+        "expectedPrimaryResultCode": "verifier_binary_hash_mismatch",
+        "enforcement": "source-currentness-validation",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-STALE-PACKAGE-HASH",
+        "category": "stale_currentness",
+        "changedArtifact": "packageRefs.packageHash",
+        "expectedPrimaryResultCode": "package_hash_mismatch",
+        "enforcement": "source-currentness-validation",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-EXPECTED-RESULT-DRIFT",
+        "category": "stale_currentness",
+        "changedArtifact": "expected-results/sample-good-finalized-election.json",
+        "expectedPrimaryResultCode": "expected_result_hash_mismatch",
+        "enforcement": "source-currentness-validation",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-MISSING-PUBLICATION-PROOF",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/publication-proof-transcript.json",
+        "expectedPrimaryResultCode": "missing_publication_proof_transcript",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-PUBLISHED-COUNT-MISMATCH",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+        "expectedPrimaryResultCode": "published_ballot_count_mismatch",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-PUBLISHED-DUPLICATE",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+        "expectedPrimaryResultCode": "published_ballot_duplicate",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-PUBLISHED-REMOVAL",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+        "expectedPrimaryResultCode": "published_ballot_removed",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-PUBLISHED-INSERTION",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+        "expectedPrimaryResultCode": "published_ballot_inserted",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-PUBLISHED-REPLACEMENT",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+        "expectedPrimaryResultCode": "published_ballot_replaced",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-WRONG-ELECTION",
+        "category": "accepted_to_published",
+        "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+        "expectedPrimaryResultCode": "election_id_mismatch",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      },
+      {
+        "caseId": "TM-WRONG-TALLY-TARGET",
+        "category": "tally_replay",
+        "changedArtifact": "artifacts/election-record/tally-replay.json",
+        "expectedPrimaryResultCode": "tally_target_mismatch",
+        "enforcement": "binding-check-replay",
+        "coverageStatus": "covered"
+      }
+    ],
+    "residualLimitations": [
+      "No direct readiness-register mutation",
+      "No production rollout claim",
+      "No public or state election readiness claim",
+      "No legal sufficiency claim",
+      "No external crypto-review completion claim",
+      "No unlimited election scale claim",
+      "FEAT-153 hardens current package and verifier binding; it does not replace FEAT-117 SP-07 proof construction.",
+      "External crypto review remains pending for the underlying proof construction.",
+      "Production-like operational evidence remains owned by FEAT-154.",
+      "Failed-finalize continuity remains owned by FEAT-155.",
+      "Canonical readiness-register promotion remains owned by FEAT-156 or a later explicit FEAT-130 promotion."
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "TM-ACCEPTED-SET-HASH",
+      "fixtureId": "tamper-accepted-set-hash",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/accepted-ballot-set.json",
+      "expectedPrimaryResultCode": "accepted_ballot_inventory_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-STREAM-HASH",
+      "fixtureId": "tamper-published-stream-hash",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_stream_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-STREAM-SEQUENCE",
+      "fixtureId": "tamper-published-stream-sequence",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_sequence_invalid",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-TALLY-COUNT-RECONCILIATION",
+      "fixtureId": "tamper-sp05-count-reconciliation",
+      "category": "tally_replay",
+      "changedArtifact": "artifacts/election-record/result-binding.json",
+      "expectedPrimaryResultCode": "eligibility_count_reconciliation_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-TALLY-CHALLENGE-SPOIL-COUNT",
+      "fixtureId": "tamper-sp04-count",
+      "category": "tally_replay",
+      "changedArtifact": "artifacts/election-record/sp04-evidence.json",
+      "expectedPrimaryResultCode": "challenge_spoil_count_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-EXPECTED-RESULT-DRIFT",
+      "fixtureId": "tamper-expected-result-drift",
+      "category": "stale_currentness",
+      "changedArtifact": "expected-results/sample-good-finalized-election.json",
+      "expectedPrimaryResultCode": "expected_result_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-STALE-MANIFEST-HASH",
+      "fixtureId": "tamper-stale-manifest-hash",
+      "category": "stale_currentness",
+      "changedArtifact": "corpus-manifest.json",
+      "expectedPrimaryResultCode": "source_release_manifest_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-STALE-VERIFIER-SOURCE-REF",
+      "fixtureId": "tamper-stale-verifier-source-ref",
+      "category": "stale_currentness",
+      "changedArtifact": "corpus-manifest.json",
+      "expectedPrimaryResultCode": "verifier_source_ref_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-STALE-VERIFIER-BINARY-HASH",
+      "fixtureId": "tamper-stale-verifier-binary-hash",
+      "category": "stale_currentness",
+      "changedArtifact": "corpus-manifest.json",
+      "expectedPrimaryResultCode": "verifier_binary_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-STALE-PACKAGE-HASH",
+      "fixtureId": "tamper-stale-package-hash",
+      "category": "stale_currentness",
+      "changedArtifact": "packageRefs.packageHash",
+      "expectedPrimaryResultCode": "package_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-MISSING-PUBLICATION-PROOF",
+      "fixtureId": "tamper-missing-publication-proof",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/publication-proof-transcript.json",
+      "expectedPrimaryResultCode": "missing_publication_proof_transcript",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-COUNT-MISMATCH",
+      "fixtureId": "tamper-published-count-mismatch",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_count_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-DUPLICATE",
+      "fixtureId": "tamper-published-duplicate",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_duplicate",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-REMOVAL",
+      "fixtureId": "tamper-published-removal",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_removed",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-INSERTION",
+      "fixtureId": "tamper-published-insertion",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_inserted",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLISHED-REPLACEMENT",
+      "fixtureId": "tamper-published-replacement",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "published_ballot_replaced",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-WRONG-ELECTION",
+      "fixtureId": "tamper-wrong-election",
+      "category": "accepted_to_published",
+      "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+      "expectedPrimaryResultCode": "election_id_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-WRONG-TALLY-TARGET",
+      "fixtureId": "tamper-wrong-tally-target",
+      "category": "tally_replay",
+      "changedArtifact": "artifacts/election-record/tally-replay.json",
+      "expectedPrimaryResultCode": "tally_target_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PROTOCOL-PACKAGE-DRIFT",
+      "fixtureId": "tamper-stale-protocol-package-version",
+      "category": "stale_currentness",
+      "changedArtifact": "artifacts/election-record/release-integrity.json",
+      "expectedPrimaryResultCode": "release_integrity_circuit_or_package_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-VERIFIER-BINARY-DRIFT",
+      "fixtureId": "tamper-stale-verifier-binary-hash",
+      "category": "stale_currentness",
+      "changedArtifact": "artifacts/election-record/release-manifest.json",
+      "expectedPrimaryResultCode": "release_integrity_component_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-VERIFIER-SOURCE-DRIFT",
+      "fixtureId": "tamper-stale-verifier-source-ref",
+      "category": "stale_currentness",
+      "changedArtifact": "artifacts/election-record/release-manifest.json",
+      "expectedPrimaryResultCode": "release_integrity_component_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PACKAGE-SCHEMA-DRIFT",
+      "fixtureId": "tamper-package-schema-version-drift",
+      "category": "package_integrity",
+      "changedArtifact": "VerifierInputManifest.json",
+      "expectedPrimaryResultCode": "package_unparseable",
+      "expectedOverallStatus": "notAvailable",
+      "expectedExitCode": 2,
+      "blocksScoreMovement": true
+    },
+    {
+      "caseId": "TM-PUBLIC-FORBIDDEN-MATERIAL",
+      "fixtureId": "tamper-sp10-forbidden-leak",
+      "category": "public_safety",
+      "changedArtifact": "artifacts/election-record/operational-security-summary.json",
+      "expectedPrimaryResultCode": "operational_security_forbidden_material",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    }
+  ]
+}

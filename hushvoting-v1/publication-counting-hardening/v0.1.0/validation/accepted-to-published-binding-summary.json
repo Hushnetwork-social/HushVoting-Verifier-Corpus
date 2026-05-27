@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "publication-counting-accepted-to-published-binding-summary.v1",
+  "generatedAt": "2026-05-28T12:00:00.0000000Z",
+  "status": "accepted",
+  "errorCount": 0,
+  "errors": [],
+  "diagnostics": {
+    "packagePath": "HushVoting-Verifier-Corpus/hushvoting-v1/v0.2.0/packages/sample-good-finalized-election",
+    "checkedArtifactPaths": [
+      "artifacts/election-record/accepted-ballot-set.json",
+      "artifacts/election-record/published-ballot-stream.json",
+      "artifacts/election-record/publication-proof-transcript.json",
+      "artifacts/election-record/publication-proof-verifier-output.json",
+      "artifacts/election-record/tally-replay.json"
+    ]
+  },
+  "checks": [
+    {
+      "checkId": "AT-PUB-001-accepted-set-current",
+      "status": "pass",
+      "purpose": "Accepted ballot set remains bound to the package manifest and result binding.",
+      "requiredArtifactIds": [
+        "accepted-ballot-set",
+        "result-binding"
+      ],
+      "mustBind": [
+        "accepted_ballot_set_hash",
+        "result_binding_accepted_ballot_hash",
+        "audit_manifest_artifact_hash"
+      ],
+      "validFixtureIds": [
+        "sample-good-finalized-election",
+        "sample-good-larger-electorate",
+        "sample-good-low-turnout",
+        "sample-good-multi-option-single-winner",
+        "sample-good-trustee-threshold"
+      ],
+      "tamperFixtureIds": [
+        "tamper-accepted-set-hash",
+        "tamper-duplicate-nullifier"
+      ],
+      "expectedFailureResultCodes": [
+        "accepted_ballot_inventory_hash_mismatch",
+        "accepted_ballot_duplicate_nullifier"
+      ],
+      "blocksScoreMovementWhenFailing": true
+    },
+    {
+      "checkId": "AT-PUB-002-published-stream-current",
+      "status": "pass",
+      "purpose": "Published stream hash and sequence remain bound to the package manifest and verifier output.",
+      "requiredArtifactIds": [
+        "published-ballot-stream",
+        "publication-proof-verifier-output"
+      ],
+      "mustBind": [
+        "published_stream_hash",
+        "published_stream_sequence",
+        "verifier_output_package_hash"
+      ],
+      "validFixtureIds": [
+        "sample-good-finalized-election",
+        "sample-good-larger-electorate",
+        "sample-good-low-turnout",
+        "sample-good-multi-option-single-winner",
+        "sample-good-trustee-threshold"
+      ],
+      "tamperFixtureIds": [
+        "tamper-published-stream-hash",
+        "tamper-published-stream-sequence"
+      ],
+      "expectedFailureResultCodes": [
+        "published_ballot_stream_hash_mismatch",
+        "published_ballot_sequence_invalid"
+      ],
+      "blocksScoreMovementWhenFailing": true
+    },
+    {
+      "checkId": "AT-PUB-003-publication-proof-bound",
+      "status": "pass",
+      "purpose": "Publication proof transcript, published stream, and verifier output are mutually current.",
+      "requiredArtifactIds": [
+        "publication-proof-transcript",
+        "publication-proof-verifier-output",
+        "published-ballot-stream"
+      ],
+      "mustBind": [
+        "publication_proof_transcript_hash",
+        "published_stream_hash",
+        "verifier_output_hash",
+        "package_hash"
+      ],
+      "validFixtureIds": [
+        "sample-good-finalized-election",
+        "sample-good-trustee-threshold"
+      ],
+      "tamperFixtureIds": [
+        "tamper-published-stream-hash",
+        "tamper-expected-result-drift"
+      ],
+      "expectedFailureResultCodes": [
+        "published_ballot_stream_hash_mismatch",
+        "package_manifest_artifact_hash_mismatch"
+      ],
+      "blocksScoreMovementWhenFailing": true
+    }
+  ]
+}
