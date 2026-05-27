@@ -4,6 +4,7 @@
   "producerFeature": "FEAT-153",
   "dimensionId": "RDY-DIM-004",
   "status": "accepted",
+  "sourcePackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
   "scoreEffect": {
     "proposedScoreFrom": 7,
     "proposedScoreTo": 8,
@@ -21,6 +22,28 @@
     "validation/no-secret-scan-result.json",
     "readiness/publication-counting-score-proposal.json",
     "handoff/publication-counting-hardening-downstream-handoff.json"
+  ],
+  "evidenceArtifactHashes": [
+    {
+      "path": "validation/package-verifier-replay-summary.json",
+      "sha256Hash": "sha256:182db224c013507f1a5e124e381d86c2d046789b50123e6e30b54e1c7f11f5b9"
+    },
+    {
+      "path": "validation/accepted-to-published-binding-summary.json",
+      "sha256Hash": "sha256:ba208428099ce66bcf2f35514ef37b13ec64596fff67dbf1c4ea3b75d9d16461"
+    },
+    {
+      "path": "validation/tally-replay-binding-summary.json",
+      "sha256Hash": "sha256:25053bab8fdad1008a6a6540a32ed7188b504db5d8afd7cf9e48a18d47e1a921"
+    },
+    {
+      "path": "validation/tamper-stale-replay-summary.json",
+      "sha256Hash": "sha256:69f01e5afea778d1af7bc61de536419423cc1a8153ab88be67c9640d943000a6"
+    },
+    {
+      "path": "validation/package-hash-currentness-summary.json",
+      "sha256Hash": "sha256:9aa06a792e79739d83fb9869ba38b171cd8712f6375f8d95ab59a4d22bca843d"
+    }
   ],
   "nonClaims": [
     "No direct readiness-register mutation",

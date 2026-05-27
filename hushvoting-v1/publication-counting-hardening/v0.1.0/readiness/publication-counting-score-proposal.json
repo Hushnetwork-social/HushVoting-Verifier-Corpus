@@ -2,6 +2,31 @@
   "schemaVersion": "publication-counting-score-proposal.v1",
   "generatedAt": "2026-05-28T12:00:00.0000000Z",
   "producerFeature": "FEAT-153",
+  "status": "accepted",
+  "evidencePackagePath": "HushVoting-Verifier-Corpus/hushvoting-v1/publication-counting-hardening/v0.1.0/",
+  "sourcePackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+  "evidenceArtifactHashes": [
+    {
+      "path": "validation/package-verifier-replay-summary.json",
+      "sha256Hash": "sha256:182db224c013507f1a5e124e381d86c2d046789b50123e6e30b54e1c7f11f5b9"
+    },
+    {
+      "path": "validation/accepted-to-published-binding-summary.json",
+      "sha256Hash": "sha256:ba208428099ce66bcf2f35514ef37b13ec64596fff67dbf1c4ea3b75d9d16461"
+    },
+    {
+      "path": "validation/tally-replay-binding-summary.json",
+      "sha256Hash": "sha256:25053bab8fdad1008a6a6540a32ed7188b504db5d8afd7cf9e48a18d47e1a921"
+    },
+    {
+      "path": "validation/tamper-stale-replay-summary.json",
+      "sha256Hash": "sha256:69f01e5afea778d1af7bc61de536419423cc1a8153ab88be67c9640d943000a6"
+    },
+    {
+      "path": "validation/package-hash-currentness-summary.json",
+      "sha256Hash": "sha256:9aa06a792e79739d83fb9869ba38b171cd8712f6375f8d95ab59a4d22bca843d"
+    }
+  ],
   "proposal": {
     "dimensionId": "RDY-DIM-004",
     "proposedScoreFrom": 7,
@@ -15,6 +40,19 @@
       "AT-TALLY-001-count-reconciliation",
       "AT-TALLY-002-trustee-release-bound",
       "AT-TALLY-003-final-result-current",
+      "TM-STALE-MANIFEST-HASH",
+      "TM-STALE-VERIFIER-SOURCE-REF",
+      "TM-STALE-VERIFIER-BINARY-HASH",
+      "TM-STALE-PACKAGE-HASH",
+      "TM-EXPECTED-RESULT-DRIFT",
+      "TM-MISSING-PUBLICATION-PROOF",
+      "TM-PUBLISHED-COUNT-MISMATCH",
+      "TM-PUBLISHED-DUPLICATE",
+      "TM-PUBLISHED-REMOVAL",
+      "TM-PUBLISHED-INSERTION",
+      "TM-PUBLISHED-REPLACEMENT",
+      "TM-WRONG-ELECTION",
+      "TM-WRONG-TALLY-TARGET",
       "TM-PROTOCOL-PACKAGE-DRIFT",
       "TM-VERIFIER-BINARY-DRIFT",
       "TM-VERIFIER-SOURCE-DRIFT",

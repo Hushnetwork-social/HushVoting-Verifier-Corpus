@@ -74,12 +74,12 @@
     },
     {
       "path": "readiness/publication-counting-readiness-fragment.json",
-      "sha256Hash": "sha256:ecb19cd458d87c6f82beed9ed26df7d56a433c2c2c08708001b8929976474e6f",
+      "sha256Hash": "sha256:839d9b7b7dd189fc9c76f37684efb4d2c36c22bef45fa690da0b6fa45e214220",
       "publicSafe": true
     },
     {
       "path": "readiness/publication-counting-score-proposal.json",
-      "sha256Hash": "sha256:00cc92f33a865990282148202ab7c8df200d9c86bfef8ebc51e18d1a5b0fb2a7",
+      "sha256Hash": "sha256:7143e7e69fe3c5cf0d8f4a8df933419a059ed30377fab333d0bccbd6d079124a",
       "publicSafe": true
     },
     {
