@@ -1,0 +1,18 @@
+{
+  "outputVersion": "1.0",
+  "packageId": "unavailable",
+  "electionId": "unavailable",
+  "verifierProfileId": "public_anonymous_v1",
+  "overallStatus": "fail",
+  "exitCode": 1,
+  "verifiedAt": "2026-05-27T19:37:52.3299682Z",
+  "results": [
+    {
+      "checkCode": "VFY-CLI-001",
+      "status": "fail",
+      "resultCode": "unsupported_live_dependency",
+      "message": "The verifier only accepts local package paths in v1.",
+      "evidence": {}
+    }
+  ]
+}

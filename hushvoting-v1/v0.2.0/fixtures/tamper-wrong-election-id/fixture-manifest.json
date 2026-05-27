@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-wrong-election-id",
+  "fixtureFamily": "election_identity",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "baseline_finalized",
+  "profileDescription": "Synthetic tamper fixture derived from the FEAT-135 baseline good sample.",
+  "packagePath": "packages/tamper-wrong-election-id",
+  "packageHash": "sha256:ee898aa665b22c7c3706dc0d3134e63f138da85fd590ecc7339183502c9a216c",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes one package artifact to a different election id."
+  },
+  "changedArtifact": "artifacts/election-record/accepted-ballot-set.json",
+  "expectedPrimaryResultCode": "election_id_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-wrong-election-id.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-wrong-election-id",
+    "output": "validation/verifier-output/tamper-wrong-election-id"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

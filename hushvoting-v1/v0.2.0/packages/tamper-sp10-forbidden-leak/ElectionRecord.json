@@ -1,0 +1,25 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "lifecycleState": "Finalized",
+  "protocolPackageId": "omega-hushvoting-v1",
+  "protocolPackageVersion": "v1.2.0",
+  "protocolPackageStatus": "ApprovedInternal",
+  "protocolSpecificationHash": "d4f02eaafd1a9e9de7d10972ca8e47fa7a985825c3c9c1e249c72683cb3e4f19",
+  "protocolProofPackageHash": "c1cda26362828b69266512052b97cb3729e3b052e4ade47c0a1e3383defe73c7",
+  "protocolReleaseManifestHash": "a4d451ec23463726f72c43d64c710968f6b602cd653b4de8adee1b556240a829",
+  "accessLocations": [
+    {
+      "kind": "Repository",
+      "location": "https://github.com/Hushnetwork-social/protocol-omega-packages",
+      "contentHash": "a0561fd649cdb6baa784055f051bad796ea0afef17fca38219549deeba4e8c1a"
+    },
+    {
+      "kind": "Repository",
+      "location": "https://github.com/Hushnetwork-social/protocol-omega-packages",
+      "contentHash": "a0561fd649cdb6baa784055f051bad796ea0afef17fca38219549deeba4e8c1a"
+    }
+  ],
+  "outcomeStatus": "clean_finalized",
+  "cleanFinalization": true,
+  "finalizationMode": "clean_finalization"
+}

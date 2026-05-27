@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "sample-good-finalized-election",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "requiredResultCodes": [
+    "package_structure_valid"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-PROFILE-000": "pass",
+    "VFY-ELECTION-000": "pass",
+    "VFY-ACCEPTED-000": "pass",
+    "VFY-PUBLISHED-000": "pass",
+    "CTRL-000": "notApplicable",
+    "VFY-PRIVACY-000": "pass"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "pass",
+    "packageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc"
+  },
+  "normalizedOutputHash": "sha256:b319a4b3e8f07a0bb5ee71cf8a3f7ddaeecd67dca96c7b088df7ab07b066ee8c",
+  "outputRef": "validation/verifier-output/sample-good-finalized-election/VerifierOutput.json"
+}

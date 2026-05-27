@@ -1,0 +1,34 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "verifiedAt": "2026-05-27T12:00:00Z",
+  "results": [
+    {
+      "checkCode": "ELI-000",
+      "status": "pass",
+      "resultCode": "eligibility_evidence_valid",
+      "message": "SP-05 public eligibility artifacts were generated.",
+      "evidence": {
+        "rostered_count": "4"
+      }
+    },
+    {
+      "checkCode": "ELI-001",
+      "status": "pass",
+      "resultCode": "eligibility_evidence_valid",
+      "message": "Eligibility policy is declared.",
+      "evidence": {
+        "eligibility_policy_id": "organizational_eligibility_checkoff_v1"
+      }
+    },
+    {
+      "checkCode": "ELI-013",
+      "status": "pass",
+      "resultCode": "eligibility_evidence_valid",
+      "message": "Contact-code provider readiness is production-ready.",
+      "evidence": {
+        "contact_code_provider_readiness": "Ready"
+      }
+    }
+  ]
+}

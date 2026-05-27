@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "sample-good-trustee-threshold",
+  "fixtureFamily": "good_sample",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "trustee_threshold",
+  "profileDescription": "Synthetic good sample with trustee-threshold finalization, accepted control-domain evidence, and release artifacts.",
+  "packagePath": "packages/sample-good-trustee-threshold",
+  "packageHash": "sha256:b0205486026c73d6f292d69f65d50271e95d5754f9a31baae776ea81266f684e",
+  "mutation": {
+    "mutationType": "none",
+    "description": "No verifier-failing mutation. Adds a public-safe profile marker to classify the synthetic good-sample shape."
+  },
+  "changedArtifact": "profile-marker.json",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedCheckStatus": "pass",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "expectedOutputRef": "expected-results/sample-good-trustee-threshold.json",
+  "proofStatement": "Synthetic finalized public package passes the public anonymous verifier.",
+  "secondaryFailuresAllowed": false,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/sample-good-trustee-threshold",
+    "output": "validation/verifier-output/sample-good-trustee-threshold"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

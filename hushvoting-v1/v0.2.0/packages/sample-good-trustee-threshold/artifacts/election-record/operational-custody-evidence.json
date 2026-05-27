@@ -1,0 +1,33 @@
+{
+  "trusteeThresholdCustodyExpected": true,
+  "adminOnlyProtectedTallyCustodyEvidence": null,
+  "schema": "HushVotingOperationalCustodyEvidence-v1",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "programVersion": "SP10-P1",
+  "governanceMode": "TrusteeThreshold",
+  "custodyMode": "aws_kms_per_election_envelope_v1",
+  "executorKeyLifecycle": "executor_ephemeral_memory_key_v1",
+  "publicEvidenceFiles": [
+    "artifacts/election-record/operational-security-summary.json",
+    "artifacts/election-record/operational-custody-evidence.json"
+  ],
+  "publicPrivacyBoundary": [
+    "no_raw_log_line",
+    "no_raw_audit_log",
+    "no_ip_address",
+    "no_device_id",
+    "no_kms_plaintext_key",
+    "no_kms_unwrapped_key",
+    "no_executor_private_key",
+    "no_iam_policy_document",
+    "no_security_group_rule_dump",
+    "no_raw_backup_archive",
+    "no_incident_workpaper",
+    "no_regulatory_workpaper",
+    "no_authority_private_correspondence",
+    "no_voter_detail",
+    "no_plaintext_vote",
+    "no_raw_trustee_share",
+    "no_proof_witness"
+  ]
+}

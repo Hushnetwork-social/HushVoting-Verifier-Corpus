@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-published-stream-hash",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "published_ballot_stream_hash_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-PUBLISHED-002": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:d2262f6cccab86cab219f8c0b52b204a0ccaca50f68d89fd2cee5ec1f59e4e42"
+  },
+  "normalizedOutputHash": "sha256:11eebd94bdc4878502634fe2691a876242310812a1177e00ecfa17e449bdc9b4",
+  "outputRef": "validation/verifier-output/tamper-published-stream-hash/VerifierOutput.json"
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "sample-good-multi-option-single-winner",
+  "fixtureFamily": "good_sample",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "multi_option_single_winner",
+  "profileDescription": "Synthetic good sample with a three-option single-winner package shape and reconciled verification artifacts.",
+  "packagePath": "packages/sample-good-multi-option-single-winner",
+  "packageHash": "sha256:45678121956d9eadd9e6e936337a6acc7e82199db9daae1c0d8b55d4cdf94915",
+  "mutation": {
+    "mutationType": "none",
+    "description": "No verifier-failing mutation. Adds a public-safe profile marker to classify the synthetic good-sample shape."
+  },
+  "changedArtifact": "profile-marker.json",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedCheckStatus": "pass",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "expectedOutputRef": "expected-results/sample-good-multi-option-single-winner.json",
+  "proofStatement": "Synthetic finalized public package passes the public anonymous verifier.",
+  "secondaryFailuresAllowed": false,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/sample-good-multi-option-single-winner",
+    "output": "validation/verifier-output/sample-good-multi-option-single-winner"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

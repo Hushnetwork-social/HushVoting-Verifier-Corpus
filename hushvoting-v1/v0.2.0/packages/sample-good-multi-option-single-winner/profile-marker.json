@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "verifier-corpus-good-sample-profile-marker.v1",
+  "fixtureId": "sample-good-multi-option-single-winner",
+  "corpusProfileId": "multi_option_single_winner",
+  "description": "Synthetic good sample with a three-option single-winner package shape and reconciled verification artifacts.",
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "publicBoundary": "Synthetic profile marker only; this file is not restricted election evidence."
+}

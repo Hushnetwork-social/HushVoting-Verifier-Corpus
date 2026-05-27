@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp04-receipt-set-hash",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "challenge_spoil_receipt_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-SP04-071": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:50bf8abc8bb44e51ce0360f81eee3a0c9edfa8c3647f585b9346c273bdbd5a02"
+  },
+  "normalizedOutputHash": "sha256:f90a5de02d95a34fe1fc582f8709668519c8d6263c2b82d78c75cfca533cce23",
+  "outputRef": "validation/verifier-output/tamper-sp04-receipt-set-hash/VerifierOutput.json"
+}

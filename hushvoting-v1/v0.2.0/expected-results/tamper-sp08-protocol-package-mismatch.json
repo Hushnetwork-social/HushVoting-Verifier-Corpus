@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp08-protocol-package-mismatch",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "release_integrity_circuit_or_package_hash_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "REL-005": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:3f0b61196750da0d078e2aff9f9d6a5aaba777f72bfb71b590461695420ed989"
+  },
+  "normalizedOutputHash": "sha256:34ca694073bcb188fe98a843ff49bde2f2c7dfd07ff7d31233a0fe2b44aa8799",
+  "outputRef": "validation/verifier-output/tamper-sp08-protocol-package-mismatch/VerifierOutput.json"
+}

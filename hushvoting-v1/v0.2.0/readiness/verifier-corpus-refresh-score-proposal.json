@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "verifier-corpus-refresh-score-proposal.v1",
+  "proposalId": "RDY-DIM-002-v0.2.0-score-proposal",
+  "producerFeature": "FEAT-151",
+  "dimensionId": "RDY-DIM-002",
+  "proposedScoreFrom": 6,
+  "proposedScoreTo": 8,
+  "status": "accepted",
+  "doesNotMutateRegister": true,
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "evidenceRefs": [
+    {
+      "path": "corpus-manifest.json",
+      "sha256Hash": "sha256:bd6d7d179368fbb7a13811d2fea497ad68306efd949a8178778ca2890554a48c"
+    },
+    {
+      "path": "fixtures/fixture-index.json",
+      "sha256Hash": "sha256:2b2646bf025b7a2f38e9fc2935c4e89879bcc930aeb47d29a72657cdc92354fb"
+    },
+    {
+      "path": "validation/result-code-stability-summary.json",
+      "status": "accepted"
+    },
+    {
+      "path": "validation/stale-version-drift-check.json",
+      "status": "accepted"
+    },
+    {
+      "path": "validation/no-secret-scan-result.json",
+      "status": "pass"
+    }
+  ],
+  "scoreMovementRationale": {
+    "baselineEvidence": "FEAT-135 v0.1.0 remains accepted with one good sample and preserved tamper coverage.",
+    "refreshEvidence": "FEAT-151 v0.2.0 includes 5 good-sample profiles, 28 tamper/drift fixtures, stable expected result outputs, stale-version drift checks, and no-secret scan evidence.",
+    "remainingLimits": "This proposal does not claim production rollout, public/state election readiness, legal sufficiency, failed-finalization continuity, or external validator acceptance."
+  },
+  "promotionOwner": "FEAT-156 or later explicit FEAT-130 promotion"
+}

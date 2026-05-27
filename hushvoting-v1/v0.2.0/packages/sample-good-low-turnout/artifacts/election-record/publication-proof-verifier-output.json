@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-05-27T12:00:00Z",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "statementId": "sp07-bayer-groth-hush-vector-shuffle-v1",
+  "results": [
+    {
+      "checkCode": "VFY-SP07-000",
+      "status": "pass",
+      "resultCode": "publication_proof_evidence_valid",
+      "message": "SP-07 publication proof transcript and witness deletion receipt are available.",
+      "evidence": {
+        "publication_proof_mode": "zk_rerandomization_shuffle_v1",
+        "proof_construction": "bayer_groth_reencryption_shuffle_argument_v1",
+        "statement_id": "sp07-bayer-groth-hush-vector-shuffle-v1",
+        "external_review_status": "external_crypto_review_pending",
+        "accepted_ballot_count": "1",
+        "published_ballot_count": "1"
+      }
+    }
+  ]
+}

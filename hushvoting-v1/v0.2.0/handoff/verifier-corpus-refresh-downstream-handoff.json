@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "verifier-corpus-downstream-handoff.v1",
+  "handoffId": "FEAT-151-v0.2.0-handoff",
+  "producerFeature": "FEAT-151",
+  "corpusVersion": "v0.2.0",
+  "publicRepositoryRef": "local-generated",
+  "manifestHash": "sha256:bd6d7d179368fbb7a13811d2fea497ad68306efd949a8178778ca2890554a48c",
+  "goodPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+  "fixtureIndexHash": "sha256:2b2646bf025b7a2f38e9fc2935c4e89879bcc930aeb47d29a72657cdc92354fb",
+  "verifierSourceRef": "88e7d8f4f35e21a341d9ad1b92ecc73bdba0ab15",
+  "verifierHash": "sha256:7048677ba0c66c69c123ab7d046eb03a0d3c7642103f3dd6a2645873c928d6a4",
+  "cleanMachineValidationSummary": {
+    "path": "validation/clean-machine-validation-summary.json",
+    "status": "windows_linux_replay_validated"
+  },
+  "noSecretScanResult": {
+    "path": "validation/no-secret-scan-result.json",
+    "status": "pass"
+  },
+  "feat136ReuseNotes": {
+    "receiptImportImplementedHere": false,
+    "goodSamplePackageRef": "packages/sample-good-finalized-election",
+    "reuseInstruction": "FEAT-136 may reuse the good sample package shape and extend it with cross-device receipt inclusion fixtures."
+  },
+  "feat141ConsumerInstructions": {
+    "requiredRefs": [
+      "corpus-manifest.json",
+      "fixtures/fixture-index.json",
+      "packages/sample-good-finalized-election",
+      "validation/no-secret-scan-result.json",
+      "readiness/verifier-corpus-refresh-readiness-fragment.json"
+    ],
+    "observedDeliveryBoundary": "FEAT-141 must still collect real rehearsal or pilot evidence; this corpus is synthetic verifier replay evidence."
+  },
+  "feat152ConsumerInstructions": {
+    "receiptMatrixImplementedHere": false,
+    "reuseInstruction": "FEAT-152 may use the refreshed corpus hashes as verifier-package inputs only; QR/manual/browser/accessibility receipt-channel evidence remains owned by FEAT-152."
+  },
+  "feat153ConsumerInstructions": {
+    "publicationCountingHardeningImplementedHere": false,
+    "reuseInstruction": "FEAT-153 may consume publication/counting tamper fixture expectations, but must still produce its own runtime publication/counting evidence."
+  },
+  "feat154ConsumerInstructions": {
+    "productionOperationalRunImplementedHere": false,
+    "reuseInstruction": "FEAT-154 may cite this corpus as verifier replay support only; it still owns production-like operational run evidence."
+  },
+  "feat155ConsumerInstructions": {
+    "failedFinalizeContinuityImplementedHere": false,
+    "reuseInstruction": "FEAT-155 may reuse stale-version drift policy language, but failed-finalize continuity rehearsal remains out of this corpus release."
+  },
+  "feat156ConsumerInstructions": {
+    "registerPromotionImplementedHere": false,
+    "scoreProposalRef": "readiness/verifier-corpus-refresh-score-proposal.json",
+    "reuseInstruction": "FEAT-156 may ingest the readiness fragment and score proposal after maintainer review; this handoff does not mutate the canonical readiness register."
+  },
+  "residualRisk": "Does not replace pilot ceremony evidence, real deployment observation, external validation, or legal/regulatory approval."
+}

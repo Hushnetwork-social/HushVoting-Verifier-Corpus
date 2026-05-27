@@ -1,0 +1,12 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "publicationProofMode": "zk_rerandomization_shuffle_v1",
+  "evidenceStatus": "pass",
+  "resultCode": "publication_proof_evidence_valid",
+  "message": "SP-07 publication proof binds the accepted set, published stream, and tally replay input.",
+  "acceptedBallotSetHash": "19c2563dd7e8f235be934d1400d0ed37270d82e677964e4797f297f0690235aa",
+  "publishedBallotStreamHash": "dfcf1a17075e32c8a841dc4ba9279ed9da780843972d814c6437a89f8b32559e",
+  "publicationProofTranscriptHash": "sp07-transcript-hash",
+  "publicationProofHash": "0ceda866dc34824ab7b18efd0d6ff4770394e088c7f0fa0582d3b496811067e4",
+  "finalEncryptedTallyHash": "6f4013da5afa10bc6ac003e4385a3ff466bf898481bf6d2904ec16b959923f6f"
+}

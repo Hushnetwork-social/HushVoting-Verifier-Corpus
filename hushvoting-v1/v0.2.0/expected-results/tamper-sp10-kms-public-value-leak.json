@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp10-kms-public-value-leak",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "operational_security_forbidden_material"
+  ],
+  "requiredCheckStatuses": {
+    "OPS-005": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:80de93b40004c17c7366d213adc22f242e0cc8115f42484d0f9e08835456ec3f"
+  },
+  "normalizedOutputHash": "sha256:d905646e2914a51b88e6877d1a1468269e26e1fe6397b1aa778c444528deb350",
+  "outputRef": "validation/verifier-output/tamper-sp10-kms-public-value-leak/VerifierOutput.json"
+}

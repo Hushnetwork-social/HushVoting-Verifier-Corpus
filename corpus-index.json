@@ -1,14 +1,14 @@
-﻿{
+{
   "schemaVersion": "hushvoting-verifier-corpus-index.v1",
   "repository": "https://github.com/Hushnetwork-social/HushVoting-Verifier-Corpus",
   "latest": {
     "corpusFamily": "hushvoting-v1",
-    "corpusVersion": "v0.1.0",
-    "path": "hushvoting-v1/v0.1.0/corpus-manifest.json",
-    "manifestHash": "sha256:a4e9f7f8a4e62b8611e22410da2400f2d22e7d22ab585bb50a0b997745301b64",
+    "corpusVersion": "v0.2.0",
+    "path": "hushvoting-v1/v0.2.0/corpus-manifest.json",
+    "manifestHash": "sha256:bd6d7d179368fbb7a13811d2fea497ad68306efd949a8178778ca2890554a48c",
     "status": "accepted",
-    "goodPackageHash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36",
-    "fixtureIndexHash": "sha256:98e2e876f798f553340d91c2d12fe9036c16b91d5726a40f36c332d7ae11a200"
+    "goodPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+    "fixtureIndexHash": "sha256:2b2646bf025b7a2f38e9fc2935c4e89879bcc930aeb47d29a72657cdc92354fb"
   },
   "versions": [
     {
@@ -19,6 +19,15 @@
       "status": "accepted",
       "goodPackageHash": "sha256:2d94eb9148d97744c53658514b9af663aa80315303e08ba1cd9ca567fb321f36",
       "fixtureIndexHash": "sha256:98e2e876f798f553340d91c2d12fe9036c16b91d5726a40f36c332d7ae11a200"
+    },
+    {
+      "corpusFamily": "hushvoting-v1",
+      "corpusVersion": "v0.2.0",
+      "path": "hushvoting-v1/v0.2.0/corpus-manifest.json",
+      "manifestHash": "sha256:bd6d7d179368fbb7a13811d2fea497ad68306efd949a8178778ca2890554a48c",
+      "status": "accepted",
+      "goodPackageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+      "fixtureIndexHash": "sha256:2b2646bf025b7a2f38e9fc2935c4e89879bcc930aeb47d29a72657cdc92354fb"
     }
   ]
 }

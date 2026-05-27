@@ -1,0 +1,28 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "publishedBallotCount": 3,
+  "publishedBallotStreamHash": "dfcf1a17075e32c8a841dc4ba9279ed9da780843972d814c6437a89f8b32559e",
+  "publishedBallots": [
+    {
+      "publicationSequence": 1,
+      "encryptedBallotPackage": "trustee_threshold-ballot-1",
+      "proofBundle": "trustee_threshold-proof-1",
+      "encryptedBallotPackageHash": "E50C17527B476DE6D0D2D06716BDE9D306CDCAA5547603E7F90EAEA58322EDEE",
+      "proofBundleHash": "CD16D745015A2852D4F7C5CA15CDC6E6BB7B5B1660CD59EB7B69B2832F436879"
+    },
+    {
+      "publicationSequence": 2,
+      "encryptedBallotPackage": "trustee_threshold-ballot-2",
+      "proofBundle": "trustee_threshold-proof-2",
+      "encryptedBallotPackageHash": "5E3C313E66009D007F85F99AD73344377355DAA694C109F64CFCC08BF5AE0049",
+      "proofBundleHash": "DD9892CD12BD40F12D33C6A31B5FF2164336B675EB3430578C10F7EAE01B771F"
+    },
+    {
+      "publicationSequence": 3,
+      "encryptedBallotPackage": "trustee_threshold-ballot-3",
+      "proofBundle": "trustee_threshold-proof-3",
+      "encryptedBallotPackageHash": "FED681BCCBBFDFDE2BCAEF31BB3AD38365BBCFDD851771D729F4BD2D3F9283E6",
+      "proofBundleHash": "3D99DC334E782CDBFE7F587B4FC61E243EB4F5F5A6754D4012C54EFE0B8BC984"
+    }
+  ]
+}

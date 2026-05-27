@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp05-count-reconciliation",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "eligibility_count_reconciliation_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "ELI-012": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:5ab4043442da1a104ec25082c768a8f1d29085ec2dae6d97f060db9cb67fbec4"
+  },
+  "normalizedOutputHash": "sha256:870c8f25f170ca7b44894051103fb9f5f2e25c16805ce7789307d7de239db72c",
+  "outputRef": "validation/verifier-output/tamper-sp05-count-reconciliation/VerifierOutput.json"
+}

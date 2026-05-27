@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-corpus-index-drift",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "verifier_profile_package_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-PROFILE-001": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:0d760bbfd0be9e2908ab4ae808e41abc270f88a1550afd05a52c5a18c36acbfa"
+  },
+  "normalizedOutputHash": "sha256:1fb24d8ce92ef9bc64be847a82083683c4beb9b6861f65d6f1906ddef556002e",
+  "outputRef": "validation/verifier-output/tamper-corpus-index-drift/VerifierOutput.json"
+}

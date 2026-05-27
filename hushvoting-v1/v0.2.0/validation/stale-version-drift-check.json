@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "verifier-corpus-stale-version-drift-check.v1",
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "status": "accepted",
+  "policy": "A refreshed corpus cannot support RDY-DIM-002 movement if verifier source, verifier binary, protocol package, package schema, expected results, or corpus index bindings drift.",
+  "driftFixtureCount": 6,
+  "fixtures": [
+    {
+      "fixtureId": "tamper-corpus-index-drift",
+      "changedArtifact": "VerifierProfile.json",
+      "expectedPrimaryResultCode": "verifier_profile_package_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "fixtureId": "tamper-expected-result-drift",
+      "changedArtifact": "artifacts/election-record/result-binding.json",
+      "expectedPrimaryResultCode": "package_manifest_artifact_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "fixtureId": "tamper-package-schema-version-drift",
+      "changedArtifact": "VerifierInputManifest.json",
+      "expectedPrimaryResultCode": "package_unparseable",
+      "expectedOverallStatus": "notAvailable",
+      "expectedExitCode": 2,
+      "blocksScoreMovement": true
+    },
+    {
+      "fixtureId": "tamper-stale-protocol-package-version",
+      "changedArtifact": "artifacts/election-record/release-integrity.json",
+      "expectedPrimaryResultCode": "release_integrity_circuit_or_package_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "fixtureId": "tamper-stale-verifier-binary-hash",
+      "changedArtifact": "artifacts/election-record/release-manifest.json",
+      "expectedPrimaryResultCode": "release_integrity_component_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    },
+    {
+      "fixtureId": "tamper-stale-verifier-source-ref",
+      "changedArtifact": "artifacts/election-record/release-manifest.json",
+      "expectedPrimaryResultCode": "release_integrity_component_hash_mismatch",
+      "expectedOverallStatus": "fail",
+      "expectedExitCode": 1,
+      "blocksScoreMovement": true
+    }
+  ]
+}

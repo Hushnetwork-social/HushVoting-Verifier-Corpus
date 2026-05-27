@@ -1,0 +1,67 @@
+{
+  "reviewScopeMatchesElection": true,
+  "schema": "HushVotingExternalReviewStatus-v1",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "programVersion": "SP09-P1",
+  "reviewScope": "protocol_proof_verifier_publication_path_v1",
+  "reviewType": "private_third_party_crypto_protocol_review_v1",
+  "reviewPhase": "SP09-P1",
+  "detailedStatus": "not_started",
+  "availability": "planned",
+  "claimState": "program_defined",
+  "primaryResultCode": "external_review_not_complete",
+  "primaryIssue": "External examination program is defined; no reviewer conclusion is available.",
+  "reviewerEvidenceRef": null,
+  "reportHashOrRestrictedRef": null,
+  "customerSafeSummaryHash": null,
+  "customerSafeSummaryUrl": null,
+  "knownLimitationsVersion": "v1.2.0",
+  "knownLimitationsHash": "sha256:c1cda26362828b69266512052b97cb3729e3b052e4ade47c0a1e3383defe73c7",
+  "reviewedArtifacts": [],
+  "findingSummary": [
+    {
+      "openCount": 0,
+      "fixedCount": 0,
+      "acceptedLimitationCount": 0,
+      "severity": "critical"
+    },
+    {
+      "openCount": 0,
+      "fixedCount": 0,
+      "acceptedLimitationCount": 0,
+      "severity": "high"
+    },
+    {
+      "openCount": 0,
+      "fixedCount": 0,
+      "acceptedLimitationCount": 0,
+      "severity": "medium"
+    },
+    {
+      "openCount": 0,
+      "fixedCount": 0,
+      "acceptedLimitationCount": 0,
+      "severity": "low"
+    },
+    {
+      "openCount": 0,
+      "fixedCount": 0,
+      "acceptedLimitationCount": 0,
+      "severity": "informational"
+    }
+  ],
+  "publicEvidenceFiles": [
+    "artifacts/election-record/external-review-status.json",
+    "artifacts/election-record/external-review-claim-table.json",
+    "artifacts/election-record/external-review-verifier-output.json"
+  ],
+  "restrictedEvidenceFiles": [],
+  "publicPrivacyBoundary": [
+    "no_full_report_body",
+    "no_finding_body",
+    "no_reviewer_workpaper",
+    "no_retest_evidence_body",
+    "no_confidential_report_url",
+    "no_voter_detail"
+  ]
+}

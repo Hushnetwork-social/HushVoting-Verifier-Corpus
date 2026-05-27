@@ -1,0 +1,26 @@
+[
+  {
+    "acceptedBallotId": "f946c11a-8d38-4060-9224-0de94a5eeb40",
+    "preparedBallotId": "50aa18b6-a2a6-49c1-98f9-26a439d857f4",
+    "acceptedAt": "2026-05-27T11:34:01Z",
+    "preparedBallotHash": "multi_option_single_winner-prepared-final-1",
+    "receiptCommitment": "multi_option_single_winner-receipt-1",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  },
+  {
+    "acceptedBallotId": "8f4ebc64-0819-46ca-95f1-4ff51efb5227",
+    "preparedBallotId": "ee79bc3a-ffab-4a52-aab1-b0470158e3c1",
+    "acceptedAt": "2026-05-27T11:34:02Z",
+    "preparedBallotHash": "multi_option_single_winner-prepared-final-2",
+    "receiptCommitment": "multi_option_single_winner-receipt-2",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  },
+  {
+    "acceptedBallotId": "19abc20c-1492-4b48-972a-f50e5bbf7ffe",
+    "preparedBallotId": "01d5c364-7499-43c0-92a3-e1ebf7673af0",
+    "acceptedAt": "2026-05-27T11:34:03Z",
+    "preparedBallotHash": "multi_option_single_winner-prepared-final-3",
+    "receiptCommitment": "multi_option_single_winner-receipt-3",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  }
+]

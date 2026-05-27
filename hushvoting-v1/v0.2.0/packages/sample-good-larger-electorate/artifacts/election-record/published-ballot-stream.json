@@ -1,0 +1,35 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "publishedBallotCount": 4,
+  "publishedBallotStreamHash": "40e814235a3de905af4e857515f846310fb499a01f935de2bd66fd460b18f417",
+  "publishedBallots": [
+    {
+      "publicationSequence": 1,
+      "encryptedBallotPackage": "larger_electorate-ballot-1",
+      "proofBundle": "larger_electorate-proof-1",
+      "encryptedBallotPackageHash": "DDD4F024CBC483E578A50FF0398C4340711FA0DBF7CCC9605FACB1FBCCDA9B88",
+      "proofBundleHash": "66EDC16364CBC4734204D2DF189D8910E15A39809FADDAB9CEEA30B4A792E60F"
+    },
+    {
+      "publicationSequence": 2,
+      "encryptedBallotPackage": "larger_electorate-ballot-2",
+      "proofBundle": "larger_electorate-proof-2",
+      "encryptedBallotPackageHash": "D32521BC7A8D79B23A5DCBA0764935B19595F3503AFF757693A5AA477A493396",
+      "proofBundleHash": "B13C015C7801A5D334B1FC0530BF4DBA3DE70941BB19EB0682838AAA791915B8"
+    },
+    {
+      "publicationSequence": 3,
+      "encryptedBallotPackage": "larger_electorate-ballot-3",
+      "proofBundle": "larger_electorate-proof-3",
+      "encryptedBallotPackageHash": "7A1A37CB4B7A7B721441B5775F2957518F8799603F4E0CC20017AD524567B191",
+      "proofBundleHash": "35B782675EDDAE43F081007C0586B96F95050EE323222D6C7361528DE92F9568"
+    },
+    {
+      "publicationSequence": 4,
+      "encryptedBallotPackage": "larger_electorate-ballot-4",
+      "proofBundle": "larger_electorate-proof-4",
+      "encryptedBallotPackageHash": "92150B8A321DEDC40DB33F2637622E0BF3AA77B3B803B8884B25AAB7DC8F8EF4",
+      "proofBundleHash": "C6F9012B5DBD0C3F4E1693A3AAADA28FCFBBCB2438C85A76A1E25C745A04D130"
+    }
+  ]
+}

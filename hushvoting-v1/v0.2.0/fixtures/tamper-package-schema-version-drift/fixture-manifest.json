@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-package-schema-version-drift",
+  "fixtureFamily": "stale_version_drift",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "stale_version_drift",
+  "profileDescription": "Verification package schema drift must block score movement.",
+  "packagePath": "packages/tamper-package-schema-version-drift",
+  "packageHash": "sha256:70c495fd556476f733bcaf8897ae3f505fdbbe74067d4999d821302b7a206900",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Corrupts the verifier input manifest to simulate unaccepted package schema drift."
+  },
+  "changedArtifact": "VerifierInputManifest.json",
+  "expectedPrimaryResultCode": "package_unparseable",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "notAvailable",
+  "expectedExitCode": 2,
+  "expectedOutputRef": "expected-results/tamper-package-schema-version-drift.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-package-schema-version-drift",
+    "output": "validation/verifier-output/tamper-package-schema-version-drift"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

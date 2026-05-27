@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp08-release-manifest-hash",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "release_integrity_manifest_missing"
+  ],
+  "requiredCheckStatuses": {
+    "REL-001": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:810687c8c7f739722d5c9fa4c53fae516ac1a001ce66e64bf7f7d8628adac39b"
+  },
+  "normalizedOutputHash": "sha256:d5598e748791a51117c69b38c294b52ab45d07a89778e2e02d03d499f46e53b8",
+  "outputRef": "validation/verifier-output/tamper-sp08-release-manifest-hash/VerifierOutput.json"
+}

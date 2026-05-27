@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "verifier-corpus-clean-machine-validation-summary.v1",
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "status": "accepted",
+  "windows": {
+    "status": "pass",
+    "runtime": ".NET 9",
+    "commandShape": "PowerShell dotnet run command documented in README.md",
+    "validated": true,
+    "claimImpact": "Windows PowerShell replay has been validated."
+  },
+  "linux": {
+    "status": "pass",
+    "runtime": ".NET 9",
+    "commandShape": "Bash dotnet run command documented in README.md",
+    "validated": true,
+    "claimImpact": "Linux Bash replay has been validated."
+  },
+  "verifierOutputs": [
+    {
+      "fixtureId": "sample-good-finalized-election",
+      "status": "pass",
+      "exitCode": 0,
+      "normalizedOutputHash": "sha256:b319a4b3e8f07a0bb5ee71cf8a3f7ddaeecd67dca96c7b088df7ab07b066ee8c"
+    },
+    {
+      "fixtureId": "sample-good-larger-electorate",
+      "status": "pass",
+      "exitCode": 0,
+      "normalizedOutputHash": "sha256:b319a4b3e8f07a0bb5ee71cf8a3f7ddaeecd67dca96c7b088df7ab07b066ee8c"
+    },
+    {
+      "fixtureId": "sample-good-low-turnout",
+      "status": "pass",
+      "exitCode": 0,
+      "normalizedOutputHash": "sha256:b319a4b3e8f07a0bb5ee71cf8a3f7ddaeecd67dca96c7b088df7ab07b066ee8c"
+    },
+    {
+      "fixtureId": "sample-good-multi-option-single-winner",
+      "status": "pass",
+      "exitCode": 0,
+      "normalizedOutputHash": "sha256:b319a4b3e8f07a0bb5ee71cf8a3f7ddaeecd67dca96c7b088df7ab07b066ee8c"
+    },
+    {
+      "fixtureId": "sample-good-trustee-threshold",
+      "status": "pass",
+      "exitCode": 0,
+      "normalizedOutputHash": "sha256:1a980c28b8645b279430516ea06fdfb82b11071dd7b7db0954359a903049f456"
+    },
+    {
+      "fixtureId": "tamper-accepted-set-hash",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:3e1bc55d8e5a095e8c928143eb526cb23784a2aeb27dc31caba5097247dff356"
+    },
+    {
+      "fixtureId": "tamper-artifact-hash",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:d822d7e3b2c1e924bb8f67ace485cd68886c94cc09ebac9218341b8cec41d827"
+    },
+    {
+      "fixtureId": "tamper-corpus-index-drift",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:1fb24d8ce92ef9bc64be847a82083683c4beb9b6861f65d6f1906ddef556002e"
+    },
+    {
+      "fixtureId": "tamper-duplicate-nullifier",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:159b0499732457c040379eb2c2c520e30d565877a3da9f91bf4d4ffca66bdb55"
+    },
+    {
+      "fixtureId": "tamper-expected-result-drift",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:d822d7e3b2c1e924bb8f67ace485cd68886c94cc09ebac9218341b8cec41d827"
+    },
+    {
+      "fixtureId": "tamper-malformed-package-json",
+      "status": "notAvailable",
+      "exitCode": 2,
+      "normalizedOutputHash": "sha256:572a7ad7233bb81884153dc711c38f23aa8196cf3474f39f691b8319ec1a480b"
+    },
+    {
+      "fixtureId": "tamper-missing-artifact",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:eeb50b4edc5a09d39589a9558040b532195560a32f4b47d6d1308740da9f3fa9"
+    },
+    {
+      "fixtureId": "tamper-package-schema-version-drift",
+      "status": "notAvailable",
+      "exitCode": 2,
+      "normalizedOutputHash": "sha256:572a7ad7233bb81884153dc711c38f23aa8196cf3474f39f691b8319ec1a480b"
+    },
+    {
+      "fixtureId": "tamper-profile-mismatch",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:1fb24d8ce92ef9bc64be847a82083683c4beb9b6861f65d6f1906ddef556002e"
+    },
+    {
+      "fixtureId": "tamper-published-stream-hash",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:11eebd94bdc4878502634fe2691a876242310812a1177e00ecfa17e449bdc9b4"
+    },
+    {
+      "fixtureId": "tamper-published-stream-sequence",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:edb982aad8380760557c8509db6aa03cdf0ec5da8e25be4a9ce68a46f466e5a7"
+    },
+    {
+      "fixtureId": "tamper-sp04-accepted-binding",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:1aa98bb5bbacd3e035677b6761a14316e5b58ce73aa339e82961d364182247f3"
+    },
+    {
+      "fixtureId": "tamper-sp04-count",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:a2662c713e2ef033fc2de427212b5b0abf982e3d30b267cb5d1fa4fc52d9f7e1"
+    },
+    {
+      "fixtureId": "tamper-sp04-receipt-set-hash",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:f90a5de02d95a34fe1fc582f8709668519c8d6263c2b82d78c75cfca533cce23"
+    },
+    {
+      "fixtureId": "tamper-sp05-count-reconciliation",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:870c8f25f170ca7b44894051103fb9f5f2e25c16805ce7789307d7de239db72c"
+    },
+    {
+      "fixtureId": "tamper-sp05-public-named-field",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:17532b8c3fe8f685e5b2d6133d73e338beecedca7f425bb9a416a485a95adc92"
+    },
+    {
+      "fixtureId": "tamper-sp08-circuit-key-hash-mismatch",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:e1947931545c17f4313a492adacb8d253f6586c7061802379c9b512c5b1030b9"
+    },
+    {
+      "fixtureId": "tamper-sp08-component-hash-mismatch",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:f0c274ba82cd37cd2c838891c67d9f06985631fc402c9ce8208ad0a23fb5fb66"
+    },
+    {
+      "fixtureId": "tamper-sp08-mutable-artifact-reference",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:f2dc58dea023bdaea8dfbfa57de3dd8648b29b93f8b632567d9f59eb5aa48bec"
+    },
+    {
+      "fixtureId": "tamper-sp08-protocol-package-mismatch",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:34ca694073bcb188fe98a843ff49bde2f2c7dfd07ff7d31233a0fe2b44aa8799"
+    },
+    {
+      "fixtureId": "tamper-sp08-release-manifest-hash",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:d5598e748791a51117c69b38c294b52ab45d07a89778e2e02d03d499f46e53b8"
+    },
+    {
+      "fixtureId": "tamper-sp10-forbidden-leak",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:02e0f11192a01cfb11e53334d83b7b1d9b04ed51c1690fe724c0f3f95ed8c85f"
+    },
+    {
+      "fixtureId": "tamper-sp10-kms-public-value-leak",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:d905646e2914a51b88e6877d1a1468269e26e1fe6397b1aa778c444528deb350"
+    },
+    {
+      "fixtureId": "tamper-stale-protocol-package-version",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:34ca694073bcb188fe98a843ff49bde2f2c7dfd07ff7d31233a0fe2b44aa8799"
+    },
+    {
+      "fixtureId": "tamper-stale-verifier-binary-hash",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:ba86d487d457e3ae7f9b4581010533f8b5ecc647521369b03cdabdc32947ba0f"
+    },
+    {
+      "fixtureId": "tamper-stale-verifier-source-ref",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:ba86d487d457e3ae7f9b4581010533f8b5ecc647521369b03cdabdc32947ba0f"
+    },
+    {
+      "fixtureId": "tamper-unsupported-live-dependency",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:ac6518f645a6406c0e95925dfdcba0aa5151828401a25659f9ab161e7ebd8044"
+    },
+    {
+      "fixtureId": "tamper-wrong-election-id",
+      "status": "fail",
+      "exitCode": 1,
+      "normalizedOutputHash": "sha256:f1424392345a0cca326018c478f162022f2a8c6938e0f36275f3c188acaf8356"
+    }
+  ]
+}

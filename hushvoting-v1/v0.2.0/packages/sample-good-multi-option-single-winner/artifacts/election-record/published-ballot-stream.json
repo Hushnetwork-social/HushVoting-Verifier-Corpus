@@ -1,0 +1,28 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "publishedBallotCount": 3,
+  "publishedBallotStreamHash": "160b6c69de4134be08b90a8ee5edf1a93b08746f30d560d6e24eee78c7f08806",
+  "publishedBallots": [
+    {
+      "publicationSequence": 1,
+      "encryptedBallotPackage": "multi_option_single_winner-ballot-1",
+      "proofBundle": "multi_option_single_winner-proof-1",
+      "encryptedBallotPackageHash": "8D115CCE20874E76A3E6163254FF05DE4F9C48393B3A704E8EC718C3A9D5F4CF",
+      "proofBundleHash": "BE46A51F28898B791D8EEA9153FBE9E62AD59EF65981077417DE047A069C9C18"
+    },
+    {
+      "publicationSequence": 2,
+      "encryptedBallotPackage": "multi_option_single_winner-ballot-2",
+      "proofBundle": "multi_option_single_winner-proof-2",
+      "encryptedBallotPackageHash": "471FB6C33216D43BBF868386CF436FAC02862D59534545CE95FB63FA293713EE",
+      "proofBundleHash": "46E8E065092BBD9BB1AF1926F9B808A89F6C4066C0472BA9C89DC2FBD7A63D20"
+    },
+    {
+      "publicationSequence": 3,
+      "encryptedBallotPackage": "multi_option_single_winner-ballot-3",
+      "proofBundle": "multi_option_single_winner-proof-3",
+      "encryptedBallotPackageHash": "7BE367EB41EDBC78DA05B390B43C27499DC8A0EFE89587EB431EB9A3948B8D59",
+      "proofBundleHash": "ED1884CD9B5B58C1A7C25F23BE42F7A4BBCE18AF292CABF0CDB766E06CA5C427"
+    }
+  ]
+}
