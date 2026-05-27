@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "hushvoting-readiness-score-proposal.v1",
+  "proposalId": "FEAT-152-RDY-DIM-003-7-to-8",
+  "featureId": "FEAT-152",
+  "status": "accepted_for_later_promotion",
+  "dimensionId": "RDY-DIM-003",
+  "dimensionName": "Cross-device receipt/inclusion verification",
+  "from": 7,
+  "to": 8,
+  "doesNotMutateRegister": true,
+  "promotionOwner": "FEAT-156",
+  "requiredEvidenceRefs": [
+    "../receipt-channel-matrix-manifest.json",
+    "../validation/result-category-stability-summary.json",
+    "../validation/browser-device-accessibility-summary.json",
+    "../validation/offline-no-retained-state-summary.json",
+    "../validation/no-secret-scan-result.json"
+  ],
+  "justification": [
+    "FEAT-136 file import/export remains covered.",
+    "QR-ready payload and manual segmented payload decode into the same receipt export and verifier path.",
+    "Package ZIP remains required for public counted-inclusion verification.",
+    "Malformed channel payloads map to deterministic invalid_receipt results.",
+    "Focused component tests cover source-mode accessibility, package-required gating, and result category stability."
+  ],
+  "limitations": [
+    "Camera scan is not claimed in v0.1.0.",
+    "True short-code lookup is out of scope.",
+    "Public consumed-right proof before finalization remains out of scope.",
+    "FEAT-152 does not itself lower production rollout or public/state claim blockers."
+  ]
+}

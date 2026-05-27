@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "receipt-channel-matrix-downstream-handoff.v1",
+  "handoffId": "FEAT-152-receipt-channel-matrix-v0.1.0-handoff",
+  "producerFeature": "FEAT-152",
+  "status": "accepted",
+  "manifestRef": "../receipt-channel-matrix-manifest.json",
+  "scoreProposalRef": "../readiness/receipt-channel-matrix-score-proposal.json",
+  "readinessFragmentRef": "../readiness/receipt-channel-matrix-readiness-fragment.json",
+  "feat153ConsumerInstructions": {
+    "publicationCountingHardeningImplementedHere": false,
+    "reuseInstruction": "FEAT-153 may consume result-category and package-binding expectations, but it still owns publication/counting evidence hardening."
+  },
+  "feat154ConsumerInstructions": {
+    "productionOperationalRunImplementedHere": false,
+    "reuseInstruction": "FEAT-154 may cite receipt verification channel readiness as verifier support only; it still owns production-like operational run evidence."
+  },
+  "feat155ConsumerInstructions": {
+    "failedFinalizeContinuityImplementedHere": false,
+    "reuseInstruction": "FEAT-155 may reuse the invalid/stale/wrong-package receipt result expectations, but continuity rehearsal remains separate."
+  },
+  "feat156ConsumerInstructions": {
+    "registerPromotionImplementedHere": false,
+    "scoreProposalRef": "../readiness/receipt-channel-matrix-score-proposal.json",
+    "reuseInstruction": "FEAT-156 may ingest the readiness fragment and score proposal after maintainer review. FEAT-152 does not mutate RDY-REG directly."
+  },
+  "residualRisk": "QR/manual payloads are accepted transports for FEAT-136 receiptProof. Camera scan, public consumed-right proof before finalization, true short-code lookup, production rollout, and public/state election readiness remain outside FEAT-152."
+}

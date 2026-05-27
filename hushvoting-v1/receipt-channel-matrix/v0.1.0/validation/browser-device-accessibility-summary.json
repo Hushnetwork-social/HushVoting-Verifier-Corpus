@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "receipt-channel-browser-device-accessibility.v1",
+  "featureId": "FEAT-152",
+  "status": "pass_with_limitations",
+  "validatedAt": "2026-05-27T23:20:00Z",
+  "coveredSurfaces": [
+    "/verify-receipt"
+  ],
+  "browserDeviceMatrix": [
+    {
+      "target": "desktop_component_jsdom",
+      "coverage": [
+        "file input",
+        "qr paste input",
+        "manual segmented payload input",
+        "package zip required gate",
+        "deterministic result copy"
+      ],
+      "status": "pass"
+    },
+    {
+      "target": "mobile_responsive_design_contract",
+      "coverage": [
+        "stacked receipt source selector",
+        "full-width payload text area",
+        "touch-sized source buttons"
+      ],
+      "status": "accepted_with_limitations"
+    }
+  ],
+  "accessibilityCoverage": [
+    {
+      "item": "receipt source selector exposes radio semantics",
+      "status": "pass"
+    },
+    {
+      "item": "payload textarea has visible label and keyboard entry path",
+      "status": "pass"
+    },
+    {
+      "item": "verification button remains disabled until receipt source and package requirements are met",
+      "status": "pass"
+    },
+    {
+      "item": "result panels keep deterministic category-specific copy",
+      "status": "pass"
+    },
+    {
+      "item": "camera scan is not required because QR paste fallback is the accepted v0.1.0 path",
+      "status": "accepted_with_limitations"
+    }
+  ],
+  "limitations": [
+    "No physical camera matrix is claimed in v0.1.0.",
+    "Browser matrix is focused on component-level desktop/mobile behavior; full Playwright E2E remains optional until a dedicated FEAT-152 block is added.",
+    "Manual mode is copy/paste or segmented paste, not true short-code lookup."
+  ]
+}

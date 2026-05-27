@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "hushvoting-readiness-fragment.v1",
+  "fragmentId": "FEAT-152-receipt-channel-matrix-readiness-fragment",
+  "featureId": "FEAT-152",
+  "sourceGap": "Cross-device receipt/inclusion verification",
+  "acceptanceGate": "AT-RDY-008",
+  "status": "accepted",
+  "visibility": "public",
+  "producedAt": "2026-05-27T23:20:00Z",
+  "evidenceRefs": [
+    {
+      "artifact": "receipt-channel-matrix-manifest",
+      "path": "../receipt-channel-matrix-manifest.json",
+      "visibility": "public"
+    },
+    {
+      "artifact": "result-category-stability",
+      "path": "../validation/result-category-stability-summary.json",
+      "visibility": "public"
+    },
+    {
+      "artifact": "browser-device-accessibility",
+      "path": "../validation/browser-device-accessibility-summary.json",
+      "visibility": "public"
+    },
+    {
+      "artifact": "offline-no-retained-state",
+      "path": "../validation/offline-no-retained-state-summary.json",
+      "visibility": "public"
+    },
+    {
+      "artifact": "no-secret-scan",
+      "path": "../validation/no-secret-scan-result.json",
+      "visibility": "public"
+    }
+  ],
+  "checkResults": [
+    {
+      "checkId": "FEAT-152-WEB-FOCUSED-TESTS",
+      "status": "pass",
+      "summary": "Receipt payload contract, package verifier, and PublicReceiptVerifier component tests passed."
+    },
+    {
+      "checkId": "FEAT-152-NO-SECRET-SCAN",
+      "status": "pass",
+      "summary": "Public fixture files expose no forbidden voter, vote-choice, receipt-secret, private audit, support, KMS, or local path material."
+    }
+  ],
+  "claimEffect": {
+    "dimensionId": "RDY-DIM-003",
+    "proposedMovement": "7 -> 8",
+    "doesNotMutateRegister": true,
+    "promotionOwner": "FEAT-156"
+  },
+  "residualRisk": [
+    "No physical camera matrix is claimed.",
+    "No public consumed-right proof before finalization is claimed.",
+    "No true short-code lookup is implemented.",
+    "No production rollout, public/state election, legal sufficiency, certification, or external validation claim is made."
+  ]
+}
