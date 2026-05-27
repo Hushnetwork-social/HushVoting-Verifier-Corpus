@@ -84,7 +84,7 @@
     },
     {
       "path": "handoff/publication-counting-hardening-downstream-handoff.json",
-      "sha256Hash": "sha256:13ee2d0cb29ba0adcaa44ffa8bf152a336342ec0ef7a479edd527db3dcf91227",
+      "sha256Hash": "sha256:06264b66c1269cdc3392583596ba49b154ca0a342533c6d6632fbf3ee374048f",
       "publicSafe": true
     }
   ]
