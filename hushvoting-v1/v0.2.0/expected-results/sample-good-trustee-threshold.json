@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "sample-good-trustee-threshold",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "requiredResultCodes": [
+    "package_structure_valid"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-PROFILE-000": "pass",
+    "VFY-ELECTION-000": "pass",
+    "VFY-ACCEPTED-000": "pass",
+    "VFY-PUBLISHED-000": "pass",
+    "VFY-PRIVACY-000": "pass"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "pass",
+    "packageHash": "sha256:b0205486026c73d6f292d69f65d50271e95d5754f9a31baae776ea81266f684e"
+  },
+  "normalizedOutputHash": "sha256:1a980c28b8645b279430516ea06fdfb82b11071dd7b7db0954359a903049f456",
+  "outputRef": "validation/verifier-output/sample-good-trustee-threshold/VerifierOutput.json"
+}

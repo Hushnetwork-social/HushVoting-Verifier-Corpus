@@ -1,0 +1,25 @@
+{
+  "outputVersion": "1.0",
+  "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "overallStatus": "fail",
+  "exitCode": 1,
+  "verifiedAt": "2026-05-27T19:37:52.1506866Z",
+  "results": [
+    {
+      "checkCode": "VFY-MAN-001",
+      "status": "fail",
+      "resultCode": "package_manifest_missing_artifact",
+      "message": "Manifest entry \u0027artifacts/election-record/accepted-ballot-set.json\u0027 is missing.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-PROFILE-000",
+      "status": "pass",
+      "resultCode": "package_structure_valid",
+      "message": "Verifier profile matches the package input manifest.",
+      "evidence": {}
+    }
+  ]
+}

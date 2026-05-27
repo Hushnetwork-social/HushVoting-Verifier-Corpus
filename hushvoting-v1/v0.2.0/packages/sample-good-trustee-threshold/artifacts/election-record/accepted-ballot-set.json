@@ -1,0 +1,46 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "acceptedBallotCount": 3,
+  "acceptedBallotInventoryHash": "19c2563dd7e8f235be934d1400d0ed37270d82e677964e4797f297f0690235aa",
+  "acceptedBallots": [
+    {
+      "ballotNullifier": "trustee_threshold-nullifier-1",
+      "encryptedBallotPackage": "trustee_threshold-ballot-1",
+      "proofBundle": "trustee_threshold-proof-1",
+      "encryptedBallotPackageHash": "E50C17527B476DE6D0D2D06716BDE9D306CDCAA5547603E7F90EAEA58322EDEE",
+      "proofBundleHash": "CD16D745015A2852D4F7C5CA15CDC6E6BB7B5B1660CD59EB7B69B2832F436879",
+      "preparedBallotId": "e1d997ed-6719-45a5-bb66-f27505b2e422",
+      "preparedBallotHash": "trustee_threshold-prepared-final-1",
+      "receiptCommitment": "trustee_threshold-receipt-1",
+      "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+      "ballotDefinitionVersion": 1,
+      "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc="
+    },
+    {
+      "ballotNullifier": "trustee_threshold-nullifier-2",
+      "encryptedBallotPackage": "trustee_threshold-ballot-2",
+      "proofBundle": "trustee_threshold-proof-2",
+      "encryptedBallotPackageHash": "5E3C313E66009D007F85F99AD73344377355DAA694C109F64CFCC08BF5AE0049",
+      "proofBundleHash": "DD9892CD12BD40F12D33C6A31B5FF2164336B675EB3430578C10F7EAE01B771F",
+      "preparedBallotId": "f5d8d638-46d5-4889-945e-0a4d218976a9",
+      "preparedBallotHash": "trustee_threshold-prepared-final-2",
+      "receiptCommitment": "trustee_threshold-receipt-2",
+      "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+      "ballotDefinitionVersion": 1,
+      "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc="
+    },
+    {
+      "ballotNullifier": "trustee_threshold-nullifier-3",
+      "encryptedBallotPackage": "trustee_threshold-ballot-3",
+      "proofBundle": "trustee_threshold-proof-3",
+      "encryptedBallotPackageHash": "FED681BCCBBFDFDE2BCAEF31BB3AD38365BBCFDD851771D729F4BD2D3F9283E6",
+      "proofBundleHash": "3D99DC334E782CDBFE7F587B4FC61E243EB4F5F5A6754D4012C54EFE0B8BC984",
+      "preparedBallotId": "4d959b98-0b58-4ac7-8802-12a1ae598711",
+      "preparedBallotHash": "trustee_threshold-prepared-final-3",
+      "receiptCommitment": "trustee_threshold-receipt-3",
+      "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+      "ballotDefinitionVersion": 1,
+      "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc="
+    }
+  ]
+}

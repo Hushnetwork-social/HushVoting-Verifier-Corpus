@@ -1,0 +1,26 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "rosterSourceFileHash": "c77ffb68cd1e6b32ac69a0f2250164712871e726e959139778d017111c72f523",
+  "rosterCanonicalHash": "02a0f46aec240e504dd1d1c4e1d054036de481c0d95315481a9df6a400dd080f",
+  "rosterOpenHash": "3113195EBD66F4A0BCB9DFF2963CD86A78AC97ECAF6E1C3DA74CAA0A7235407E",
+  "activeDenominatorOpenHash": "3113195EBD66F4A0BCB9DFF2963CD86A78AC97ECAF6E1C3DA74CAA0A7235407E",
+  "activeDenominatorCloseHash": "3113195EBD66F4A0BCB9DFF2963CD86A78AC97ECAF6E1C3DA74CAA0A7235407E",
+  "commitmentTreeRoot": "0C311493E4D64E715DC3CD382C71B99449A66708091BB3ECCC20AF184182AABF",
+  "rosteredCount": 5,
+  "linkedCount": 5,
+  "activeDenominatorCount": 5,
+  "commitmentCount": 3,
+  "countedParticipationCount": 3,
+  "blankCount": 0,
+  "didNotVoteCount": 2,
+  "lateActivationCount": 0,
+  "blockedActivationCount": 0,
+  "publicPrivacyBoundary": [
+    "no_organization_voter_id",
+    "no_contact_value",
+    "no_linked_actor",
+    "no_checkoff_id",
+    "no_vote_secret",
+    "no_plaintext_choice"
+  ]
+}

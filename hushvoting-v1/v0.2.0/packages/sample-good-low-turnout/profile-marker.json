@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "verifier-corpus-good-sample-profile-marker.v1",
+  "fixtureId": "sample-good-low-turnout",
+  "corpusProfileId": "low_turnout",
+  "description": "Synthetic good sample with a larger active denominator than counted participation.",
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "publicBoundary": "Synthetic profile marker only; this file is not restricted election evidence."
+}

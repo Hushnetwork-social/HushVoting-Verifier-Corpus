@@ -1,0 +1,26 @@
+[
+  {
+    "acceptedBallotId": "720a16b0-a42f-4d41-b578-8a7900116fb2",
+    "preparedBallotId": "e1d997ed-6719-45a5-bb66-f27505b2e422",
+    "acceptedAt": "2026-05-27T11:34:01Z",
+    "preparedBallotHash": "trustee_threshold-prepared-final-1",
+    "receiptCommitment": "trustee_threshold-receipt-1",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  },
+  {
+    "acceptedBallotId": "b0177fbb-7b1e-4821-8593-8d91a69b5d12",
+    "preparedBallotId": "f5d8d638-46d5-4889-945e-0a4d218976a9",
+    "acceptedAt": "2026-05-27T11:34:02Z",
+    "preparedBallotHash": "trustee_threshold-prepared-final-2",
+    "receiptCommitment": "trustee_threshold-receipt-2",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  },
+  {
+    "acceptedBallotId": "29d2dc03-2972-488b-b499-27d5d00e8804",
+    "preparedBallotId": "4d959b98-0b58-4ac7-8802-12a1ae598711",
+    "acceptedAt": "2026-05-27T11:34:03Z",
+    "preparedBallotHash": "trustee_threshold-prepared-final-3",
+    "receiptCommitment": "trustee_threshold-receipt-3",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  }
+]

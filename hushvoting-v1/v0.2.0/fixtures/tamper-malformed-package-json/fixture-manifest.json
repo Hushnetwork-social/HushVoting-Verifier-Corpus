@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-malformed-package-json",
+  "fixtureFamily": "package_manifest",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "baseline_finalized",
+  "profileDescription": "Synthetic tamper fixture derived from the FEAT-135 baseline good sample.",
+  "packagePath": "packages/tamper-malformed-package-json",
+  "packageHash": "sha256:32b96139a02ebb7a250c31737f9285bcc98a97913362b5e96cde51a4dcc82cd3",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Replaces the election record JSON with malformed content."
+  },
+  "changedArtifact": "ElectionRecord.json",
+  "expectedPrimaryResultCode": "package_unparseable",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "notAvailable",
+  "expectedExitCode": 2,
+  "expectedOutputRef": "expected-results/tamper-malformed-package-json.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-malformed-package-json",
+    "output": "validation/verifier-output/tamper-malformed-package-json"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

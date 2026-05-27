@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-sp10-forbidden-leak",
+  "fixtureFamily": "sp10_operational_boundary",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "baseline_finalized",
+  "profileDescription": "Synthetic tamper fixture derived from the FEAT-135 baseline good sample.",
+  "packagePath": "packages/tamper-sp10-forbidden-leak",
+  "packageHash": "sha256:b5b27548e51572175a059cbd29b868937a8e239f40c6bac9a6b1783dfd51f502",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Adds synthetic forbidden public operational wording and boundary markers."
+  },
+  "changedArtifact": "artifacts/election-record/operational-security-summary.json",
+  "expectedPrimaryResultCode": "operational_security_forbidden_material",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-sp10-forbidden-leak.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-sp10-forbidden-leak",
+    "output": "validation/verifier-output/tamper-sp10-forbidden-leak"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": true,
+    "unexpectedFindingPolicy": "block"
+  }
+}

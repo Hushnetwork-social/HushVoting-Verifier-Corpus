@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-wrong-election-id",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "election_id_mismatch"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-ELECTION-001": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:ee898aa665b22c7c3706dc0d3134e63f138da85fd590ecc7339183502c9a216c"
+  },
+  "normalizedOutputHash": "sha256:f1424392345a0cca326018c478f162022f2a8c6938e0f36275f3c188acaf8356",
+  "outputRef": "validation/verifier-output/tamper-wrong-election-id/VerifierOutput.json"
+}

@@ -1,0 +1,14 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "publishedBallotCount": 1,
+  "publishedBallotStreamHash": "b216f206f364a6c7217404faee94e908dc82f8dab625b04bcdd2de5c403d71ea",
+  "publishedBallots": [
+    {
+      "publicationSequence": 1,
+      "encryptedBallotPackage": "low_turnout-ballot-1",
+      "proofBundle": "low_turnout-proof-1",
+      "encryptedBallotPackageHash": "1331686AE1AA11AC0CCDF8AE388712B4757FFD2E11CEA31FED18AC23F976EB1B",
+      "proofBundleHash": "4E848CF1810CB1263BE03D59C54B1D5DA01024EB82CFB8784A2CDCC62CA40D4B"
+    }
+  ]
+}

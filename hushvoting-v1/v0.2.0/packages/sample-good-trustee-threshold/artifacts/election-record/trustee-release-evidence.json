@@ -1,0 +1,25 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "finalizationSessionCount": 1,
+  "acceptedShareCount": 3,
+  "acceptedShares": [
+    {
+      "trusteeUserAddress": "trustee-fb652bd87c03",
+      "shareIndex": 1,
+      "shareMaterialHash": "49f04b6d19ca61a6916280d2cb91e06538ff871ee86f0c31d025d1465c0f338e",
+      "status": "Accepted"
+    },
+    {
+      "trusteeUserAddress": "trustee-ec3e957bb941",
+      "shareIndex": 2,
+      "shareMaterialHash": "8c49f2a14929b1695a117151649f5eaae0cf4767a8dce2705d27309f734eda6e",
+      "status": "Accepted"
+    },
+    {
+      "trusteeUserAddress": "trustee-85ac5a5a0175",
+      "shareIndex": 3,
+      "shareMaterialHash": "419ef09cf0bc9d01c5d6440ee10a15c610d683c07f48bcbf7d347d8111ba5108",
+      "status": "Accepted"
+    }
+  ]
+}

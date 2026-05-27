@@ -1,0 +1,17 @@
+{
+  "witnessCount": 3,
+  "deletedAt": "2026-05-27T11:57:00Z",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "witnessSetHash": "witness-set-hash",
+  "transcriptHash": "sp07-transcript-hash",
+  "proofHash": "0ceda866dc34824ab7b18efd0d6ff4770394e088c7f0fa0582d3b496811067e4",
+  "deletionStatus": "Completed",
+  "publicPrivacyBoundary": [
+    "no_hidden_permutation",
+    "no_shuffle_map",
+    "no_rerandomization_randomness",
+    "no_raw_witness",
+    "no_voter_identity",
+    "no_plaintext_choice"
+  ]
+}

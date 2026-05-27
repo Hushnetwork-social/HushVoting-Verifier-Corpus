@@ -1,0 +1,33 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "acceptedBallotCount": 2,
+  "acceptedBallotInventoryHash": "280650b39b0f2eb11709f7c84f3fd8f44c9b032e26aad948e1b4d5021b97f1a2",
+  "acceptedBallots": [
+    {
+      "ballotNullifier": "nullifier-a",
+      "encryptedBallotPackage": "ballot-a",
+      "proofBundle": "proof-a",
+      "encryptedBallotPackageHash": "D12DC843A9A86ABBEC40AD922CC5A9D90AA7F1E13B9718CC52058316CCB53FFE",
+      "proofBundleHash": "731CDE0C1EA51BE60D219636C7D517452F25D093375D5B175800A9B1DF941BEF",
+      "preparedBallotId": "e1be878a-cc73-4abd-a428-898745de47bc",
+      "preparedBallotHash": "prepared-final-a",
+      "receiptCommitment": "receipt-a",
+      "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+      "ballotDefinitionVersion": 1,
+      "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc="
+    },
+    {
+      "ballotNullifier": "nullifier-a",
+      "encryptedBallotPackage": "ballot-b",
+      "proofBundle": "proof-b",
+      "encryptedBallotPackageHash": "D2669296467B379AD46B1ABF3233E8FBDB78C2F1F65AD58022EAA0A5EF6DC001",
+      "proofBundleHash": "B98A3D85F868C3175F492B3D75FBB79216610CF132A7D99CEF28DD4BF1CAE0E8",
+      "preparedBallotId": "1ef0ac29-11e2-4271-b301-b6be91934f0c",
+      "preparedBallotHash": "prepared-final-b",
+      "receiptCommitment": "receipt-b",
+      "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+      "ballotDefinitionVersion": 1,
+      "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc="
+    }
+  ]
+}

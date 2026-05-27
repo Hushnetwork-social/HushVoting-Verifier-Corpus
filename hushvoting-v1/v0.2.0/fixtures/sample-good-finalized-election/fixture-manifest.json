@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "sample-good-finalized-election",
+  "fixtureFamily": "good_sample",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "baseline_finalized",
+  "profileDescription": "Baseline finalized organizational election from FEAT-135.",
+  "packagePath": "packages/sample-good-finalized-election",
+  "packageHash": "sha256:9014846bcf4fb7b7369e8fcb53e379d7ec3cfa6829478fb657af681e678942cc",
+  "mutation": {
+    "mutationType": "none",
+    "description": "No mutation. This is the passing synthetic finalized package."
+  },
+  "changedArtifact": "none",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedCheckStatus": "pass",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "expectedOutputRef": "expected-results/sample-good-finalized-election.json",
+  "proofStatement": "Synthetic finalized public package passes the public anonymous verifier.",
+  "secondaryFailuresAllowed": false,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/sample-good-finalized-election",
+    "output": "validation/verifier-output/sample-good-finalized-election"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

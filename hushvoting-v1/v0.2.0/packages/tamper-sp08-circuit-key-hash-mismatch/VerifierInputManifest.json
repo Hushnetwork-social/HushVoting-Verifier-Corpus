@@ -1,0 +1,18 @@
+{
+  "manifestVersion": "1.0",
+  "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "packageView": "publicAnonymous",
+  "verifierProfileId": "public_anonymous_v1",
+  "auditPackageManifestHash": "e85dcd12f3268648722cf779a4932cc7b5304cc936d435fabee014eaa5d4a43e",
+  "rootFiles": [
+    "ElectionRecord.json",
+    "AuditPackageManifest.json",
+    "VerifierInputManifest.json",
+    "VerifierProfile.json"
+  ],
+  "artifactDirectories": [
+    "artifacts/report-package",
+    "artifacts/election-record"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "outputVersion": "1.0",
+  "packageId": "unparseable",
+  "electionId": "unparseable",
+  "verifierProfileId": "public_anonymous_v1",
+  "overallStatus": "notAvailable",
+  "exitCode": 2,
+  "verifiedAt": "2026-05-27T19:37:52.2511084Z",
+  "results": [
+    {
+      "checkCode": "VFY-PKG-002",
+      "status": "fail",
+      "resultCode": "package_unparseable",
+      "message": "Expected depth to be zero at the end of the JSON payload. There is an open JSON object or array that should be closed. Path: $ | LineNumber: 0 | BytePositionInLine: 1.",
+      "evidence": {}
+    }
+  ]
+}

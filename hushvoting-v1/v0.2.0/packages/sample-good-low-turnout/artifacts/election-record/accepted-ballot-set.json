@@ -1,0 +1,20 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "acceptedBallotCount": 1,
+  "acceptedBallotInventoryHash": "9d5a9da6d660f5296752ae0ba5b3803185097ca6fade995c5e33f0237329a7fa",
+  "acceptedBallots": [
+    {
+      "ballotNullifier": "low_turnout-nullifier-1",
+      "encryptedBallotPackage": "low_turnout-ballot-1",
+      "proofBundle": "low_turnout-proof-1",
+      "encryptedBallotPackageHash": "1331686AE1AA11AC0CCDF8AE388712B4757FFD2E11CEA31FED18AC23F976EB1B",
+      "proofBundleHash": "4E848CF1810CB1263BE03D59C54B1D5DA01024EB82CFB8784A2CDCC62CA40D4B",
+      "preparedBallotId": "5ddbd7e8-3c0c-414e-82ab-6bee9fa312d5",
+      "preparedBallotHash": "low_turnout-prepared-final-1",
+      "receiptCommitment": "low_turnout-receipt-1",
+      "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)",
+      "ballotDefinitionVersion": 1,
+      "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc="
+    }
+  ]
+}

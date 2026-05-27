@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-missing-artifact",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "package_manifest_missing_artifact"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-MAN-001": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:acf5e2c2f7dafb1fb5cf1c2c20f37c3c86762110a7cc64d068f51e5ba2601c59"
+  },
+  "normalizedOutputHash": "sha256:eeb50b4edc5a09d39589a9558040b532195560a32f4b47d6d1308740da9f3fa9",
+  "outputRef": "validation/verifier-output/tamper-missing-artifact/VerifierOutput.json"
+}

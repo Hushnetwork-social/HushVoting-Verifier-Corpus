@@ -1,0 +1,22 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "policy": {
+    "requiredChallengeCount": 1,
+    "preparedPackageTtlSeconds": 900,
+    "ballotDefinitionMutationPolicy": "immutableAfterOpen",
+    "ceremonyProfileId": "challenge_spoil_v1"
+  },
+  "ballotDefinitionVersion": 1,
+  "ballotDefinitionSealedAt": "2026-05-27T11:30:00Z",
+  "preparedPackageCount": 4,
+  "spoiledPackageCount": 2,
+  "acceptedBoundReceiptCount": 2,
+  "ballotDefinitionHash": "NRASoflgGqzNd3Y/lR7Haz1FDI2k5Pzhj5YChdYFfHc=",
+  "receiptCommitmentSetHash": "2A19D85FEDA67BE52B5F3E5B92F9C0B1AAF074120EE5663CFCA3A8F2DC02DD44",
+  "publicPrivacyBoundary": [
+    "no_named_voter",
+    "no_spoiled_plaintext",
+    "no_final_randomness",
+    "no_proof_material"
+  ]
+}

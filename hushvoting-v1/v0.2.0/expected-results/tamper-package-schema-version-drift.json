@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-package-schema-version-drift",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "notAvailable",
+  "expectedExitCode": 2,
+  "requiredResultCodes": [
+    "package_unparseable"
+  ],
+  "requiredCheckStatuses": {
+    "VFY-PKG-002": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "unparseable",
+    "electionId": "unparseable",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "notAvailable",
+    "packageHash": "sha256:70c495fd556476f733bcaf8897ae3f505fdbbe74067d4999d821302b7a206900"
+  },
+  "normalizedOutputHash": "sha256:572a7ad7233bb81884153dc711c38f23aa8196cf3474f39f691b8319ec1a480b",
+  "outputRef": "validation/verifier-output/tamper-package-schema-version-drift/VerifierOutput.json"
+}

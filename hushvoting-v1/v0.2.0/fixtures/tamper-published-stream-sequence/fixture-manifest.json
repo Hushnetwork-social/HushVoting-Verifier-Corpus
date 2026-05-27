@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-published-stream-sequence",
+  "fixtureFamily": "published_ballots",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "baseline_finalized",
+  "profileDescription": "Synthetic tamper fixture derived from the FEAT-135 baseline good sample.",
+  "packagePath": "packages/tamper-published-stream-sequence",
+  "packageHash": "sha256:1ef0209f4e9c92bb6f23d461db34f05a43b183787cdf110d868e406d79538ad6",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks the published ballot stream sequence."
+  },
+  "changedArtifact": "artifacts/election-record/published-ballot-stream.json",
+  "expectedPrimaryResultCode": "published_ballot_sequence_invalid",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-published-stream-sequence.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-published-stream-sequence",
+    "output": "validation/verifier-output/tamper-published-stream-sequence"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "sample-good-low-turnout",
+  "fixtureFamily": "good_sample",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "low_turnout",
+  "profileDescription": "Synthetic good sample with a larger active denominator than counted participation.",
+  "packagePath": "packages/sample-good-low-turnout",
+  "packageHash": "sha256:627fe0650ea802a93e894bb3bc2221b828f17d2c7279d7f7020f2cfedd41ade6",
+  "mutation": {
+    "mutationType": "none",
+    "description": "No verifier-failing mutation. Adds a public-safe profile marker to classify the synthetic good-sample shape."
+  },
+  "changedArtifact": "profile-marker.json",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedCheckStatus": "pass",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "expectedOutputRef": "expected-results/sample-good-low-turnout.json",
+  "proofStatement": "Synthetic finalized public package passes the public anonymous verifier.",
+  "secondaryFailuresAllowed": false,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/sample-good-low-turnout",
+    "output": "validation/verifier-output/sample-good-low-turnout"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "sample-good-larger-electorate",
+  "fixtureFamily": "good_sample",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "larger_electorate",
+  "profileDescription": "Synthetic good sample with a larger roster, larger accepted-ballot set, and reconciled low non-voter count.",
+  "packagePath": "packages/sample-good-larger-electorate",
+  "packageHash": "sha256:eb3586ede6f4b3eaa37ad3d8158e94396d5d7acda813cf7ec82cc31e700e7708",
+  "mutation": {
+    "mutationType": "none",
+    "description": "No verifier-failing mutation. Adds a public-safe profile marker to classify the synthetic good-sample shape."
+  },
+  "changedArtifact": "profile-marker.json",
+  "expectedPrimaryResultCode": "package_structure_valid",
+  "expectedCheckStatus": "pass",
+  "expectedOverallStatus": "pass",
+  "expectedExitCode": 0,
+  "expectedOutputRef": "expected-results/sample-good-larger-electorate.json",
+  "proofStatement": "Synthetic finalized public package passes the public anonymous verifier.",
+  "secondaryFailuresAllowed": false,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/sample-good-larger-electorate",
+    "output": "validation/verifier-output/sample-good-larger-electorate"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

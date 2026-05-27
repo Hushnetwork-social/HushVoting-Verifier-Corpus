@@ -1,0 +1,146 @@
+{
+  "notForReleaseIntegrityClaims": false,
+  "blocksHighAssurance": false,
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "profileId": "public_anonymous_v1",
+  "evidenceMode": "official_sp08",
+  "releaseManifestName": "HushVotingReleaseManifest-v1.json",
+  "releaseManifestHash": "d1dff98643b8e22e2a323745d19581c734d8a5880d0a7e4075a56d19ba61e10f",
+  "protocolPackageManifestName": "ProtocolOmegaPackageManifest.json",
+  "protocolPackageManifestHash": "a4d451ec23463726f72c43d64c710968f6b602cd653b4de8adee1b556240a829",
+  "primaryResultCode": "release_integrity_evidence_valid",
+  "components": [
+    {
+      "isPlaceholder": false,
+      "componentId": "server",
+      "componentType": "server",
+      "evidenceMode": "official_sp08",
+      "artifactName": "server.artifact",
+      "artifactDigest": "sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+      "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+      "sourceTag": "hush-voting-2026.05.20",
+      "immutableReference": "server@sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+      "buildWorkflowRunId": "1234567890",
+      "distributionReference": null,
+      "signingFingerprint": null
+    },
+    {
+      "isPlaceholder": false,
+      "componentId": "web_client",
+      "componentType": "web_client",
+      "evidenceMode": "official_sp08",
+      "artifactName": "web_client.artifact",
+      "artifactDigest": "sha256:278290161bdc18b74f81bc21bbf56d461b1aa5a01dc25b928b985b3f38a8fa2c",
+      "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+      "sourceTag": "hush-voting-2026.05.20",
+      "immutableReference": "web_client@sha256:278290161bdc18b74f81bc21bbf56d461b1aa5a01dc25b928b985b3f38a8fa2c",
+      "buildWorkflowRunId": "1234567890",
+      "distributionReference": null,
+      "signingFingerprint": null
+    },
+    {
+      "isPlaceholder": false,
+      "componentId": "standalone_verifier",
+      "componentType": "standalone_verifier",
+      "evidenceMode": "official_sp08",
+      "artifactName": "standalone_verifier.artifact",
+      "artifactDigest": "sha256:4f5a96c01178c191003a09b2b88f6f736a0f2665526fec55e5a6975d99883080",
+      "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+      "sourceTag": "hush-voting-2026.05.20",
+      "immutableReference": "standalone_verifier@sha256:4f5a96c01178c191003a09b2b88f6f736a0f2665526fec55e5a6975d99883080",
+      "buildWorkflowRunId": "1234567890",
+      "distributionReference": null,
+      "signingFingerprint": null
+    },
+    {
+      "isPlaceholder": false,
+      "componentId": "sp07_proof_worker",
+      "componentType": "sp07_proof_worker",
+      "evidenceMode": "official_sp08",
+      "artifactName": "sp07_proof_worker.artifact",
+      "artifactDigest": "sha256:b6b4fac28e3ac6de9a61becb0454c44f27d54b2bd978cb7050f208cb8733afd4",
+      "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+      "sourceTag": "hush-voting-2026.05.20",
+      "immutableReference": "sp07_proof_worker@sha256:b6b4fac28e3ac6de9a61becb0454c44f27d54b2bd978cb7050f208cb8733afd4",
+      "buildWorkflowRunId": "1234567890",
+      "distributionReference": null,
+      "signingFingerprint": null
+    },
+    {
+      "isPlaceholder": false,
+      "componentId": "protocol_package",
+      "componentType": "protocol_package",
+      "evidenceMode": "official_sp08",
+      "artifactName": "protocol_package.artifact",
+      "artifactDigest": "sha256:a4d451ec23463726f72c43d64c710968f6b602cd653b4de8adee1b556240a829",
+      "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+      "sourceTag": "hush-voting-2026.05.20",
+      "immutableReference": "protocol_package@sha256:a4d451ec23463726f72c43d64c710968f6b602cd653b4de8adee1b556240a829",
+      "buildWorkflowRunId": "1234567890",
+      "distributionReference": null,
+      "signingFingerprint": null
+    },
+    {
+      "isPlaceholder": false,
+      "componentId": "audit_package_exporter",
+      "componentType": "audit_package_exporter",
+      "evidenceMode": "official_sp08",
+      "artifactName": "audit_package_exporter.artifact",
+      "artifactDigest": "sha256:53af0d0aa3ad7a1651d71c9e47266769224f547eb57d61c6c736384ef3165800",
+      "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+      "sourceTag": "hush-voting-2026.05.20",
+      "immutableReference": "audit_package_exporter@sha256:53af0d0aa3ad7a1651d71c9e47266769224f547eb57d61c6c736384ef3165800",
+      "buildWorkflowRunId": "1234567890",
+      "distributionReference": null,
+      "signingFingerprint": null
+    }
+  ],
+  "lifecycleBindings": [
+    {
+      "matchesSealedPolicy": true,
+      "lifecycleStage": "open_policy",
+      "expectedReleaseId": "release-2026.05.20",
+      "observedReleaseId": "release-2026.05.20",
+      "expectedArtifactDigest": "sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+      "observedArtifactDigest": "sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06"
+    },
+    {
+      "matchesSealedPolicy": true,
+      "lifecycleStage": "close_observed",
+      "expectedReleaseId": "release-2026.05.20",
+      "observedReleaseId": "release-2026.05.20",
+      "expectedArtifactDigest": "sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+      "observedArtifactDigest": "sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06"
+    },
+    {
+      "matchesSealedPolicy": true,
+      "lifecycleStage": "proof_worker_observed",
+      "expectedReleaseId": "release-2026.05.20",
+      "observedReleaseId": "release-2026.05.20",
+      "expectedArtifactDigest": "sha256:b6b4fac28e3ac6de9a61becb0454c44f27d54b2bd978cb7050f208cb8733afd4",
+      "observedArtifactDigest": "sha256:b6b4fac28e3ac6de9a61becb0454c44f27d54b2bd978cb7050f208cb8733afd4"
+    },
+    {
+      "matchesSealedPolicy": true,
+      "lifecycleStage": "exporter_observed",
+      "expectedReleaseId": "release-2026.05.20",
+      "observedReleaseId": "release-2026.05.20",
+      "expectedArtifactDigest": "sha256:53af0d0aa3ad7a1651d71c9e47266769224f547eb57d61c6c736384ef3165800",
+      "observedArtifactDigest": "sha256:53af0d0aa3ad7a1651d71c9e47266769224f547eb57d61c6c736384ef3165800"
+    },
+    {
+      "matchesSealedPolicy": true,
+      "lifecycleStage": "client_release_set",
+      "expectedReleaseId": "release-2026.05.20",
+      "observedReleaseId": "release-2026.05.20",
+      "expectedArtifactDigest": "sha256:278290161bdc18b74f81bc21bbf56d461b1aa5a01dc25b928b985b3f38a8fa2c",
+      "observedArtifactDigest": "sha256:278290161bdc18b74f81bc21bbf56d461b1aa5a01dc25b928b985b3f38a8fa2c"
+    }
+  ],
+  "publicPrivacyBoundary": [
+    "no_private_host_state",
+    "no_per_voter_device_identifier",
+    "no_raw_attestation_token",
+    "no_ip_address"
+  ]
+}

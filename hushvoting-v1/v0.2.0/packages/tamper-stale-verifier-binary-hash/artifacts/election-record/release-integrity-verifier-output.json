@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-05-27T12:00:00Z",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "schema": "HushVotingReleaseIntegrityVerifierOutput-v1",
+  "results": [
+    {
+      "checkCode": "REL-000",
+      "status": "pass",
+      "resultCode": "release_integrity_evidence_valid",
+      "message": "Official SP-08 release evidence is present in the exported package.",
+      "evidence": {
+        "release_manifest_hash": "5b007cc0f9025b7bb9ddcf5b8079f3ce68fc59494a172598749fe3aaa366ea72"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "verifier-corpus-good-sample-profile-marker.v1",
+  "fixtureId": "sample-good-trustee-threshold",
+  "corpusProfileId": "trustee_threshold",
+  "description": "Synthetic good sample with trustee-threshold finalization, accepted control-domain evidence, and release artifacts.",
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "publicBoundary": "Synthetic profile marker only; this file is not restricted election evidence."
+}

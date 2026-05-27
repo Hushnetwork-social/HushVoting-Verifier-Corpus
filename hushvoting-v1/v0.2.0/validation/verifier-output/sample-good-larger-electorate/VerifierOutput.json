@@ -1,0 +1,183 @@
+{
+  "outputVersion": "1.0",
+  "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "overallStatus": "pass",
+  "exitCode": 0,
+  "verifiedAt": "2026-05-27T19:37:53.4371464Z",
+  "results": [
+    {
+      "checkCode": "VFY-MAN-000",
+      "status": "pass",
+      "resultCode": "package_manifest_valid",
+      "message": "All manifest entries exist and match their SHA-256 hashes.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-PROFILE-000",
+      "status": "pass",
+      "resultCode": "package_structure_valid",
+      "message": "Verifier profile matches the package input manifest.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-ELECTION-000",
+      "status": "pass",
+      "resultCode": "package_structure_valid",
+      "message": "Election id and finalized lifecycle are consistent across package files.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-ACCEPTED-000",
+      "status": "pass",
+      "resultCode": "package_structure_valid",
+      "message": "Accepted ballot inventory hash and nullifier uniqueness passed.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-PUBLISHED-000",
+      "status": "pass",
+      "resultCode": "package_structure_valid",
+      "message": "Published ballot stream hash and sequence checks passed.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-SP04-000",
+      "status": "pass",
+      "resultCode": "challenge_spoil_evidence_valid",
+      "message": "SP-04 ballot seal, prepared counts, spoil counts, and receipt commitments passed.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "ELI-000",
+      "status": "pass",
+      "resultCode": "eligibility_evidence_valid",
+      "message": "SP-05 eligibility policy, public summary, provider readiness, and evidence boundaries passed.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "CTRL-000",
+      "status": "notApplicable",
+      "resultCode": "package_structure_valid",
+      "message": "SP-06 trustee control-domain profile is not claimed by this package.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-PRIVACY-000",
+      "status": "pass",
+      "resultCode": "package_structure_valid",
+      "message": "Public package contains no known restricted evidence fields.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "VFY-SP07-000",
+      "status": "pass",
+      "resultCode": "publication_proof_evidence_valid",
+      "message": "SP-07 publication proof transcript, tally replay binding, verifier output, and witness deletion receipt are structurally consistent.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "REL-000",
+      "status": "pass",
+      "resultCode": "release_integrity_evidence_valid",
+      "message": "SP-08 release manifest, package summary, component hashes, and lifecycle bindings are consistent.",
+      "evidence": {
+        "release_manifest_hash": "5b007cc0f9025b7bb9ddcf5b8079f3ce68fc59494a172598749fe3aaa366ea72"
+      }
+    },
+    {
+      "checkCode": "REV-000",
+      "status": "pass",
+      "resultCode": "external_review_status_valid",
+      "message": "SP-09 external review status shape is valid and claim state matches available evidence.",
+      "evidence": {
+        "review_status": "not_started",
+        "review_availability": "planned",
+        "claim_state": "program_defined"
+      }
+    },
+    {
+      "checkCode": "OPS-000",
+      "status": "pass",
+      "resultCode": "operational_security_profile_declared",
+      "message": "SP-10 managed deployment profile is declared without implying rollout readiness.",
+      "evidence": {
+        "deployment_profile_id": "hushvoting_managed_aws_container_v1",
+        "evidence_state": "managed_profile_evidence_available"
+      }
+    },
+    {
+      "checkCode": "OPS-001",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 deployment evidence is bound to the SP-08 release manifest and immutable deployment reference.",
+      "evidence": {
+        "release_manifest_hash": "5b007cc0f9025b7bb9ddcf5b8079f3ce68fc59494a172598749fe3aaa366ea72",
+        "immutable_deployment_ref": "server@sha256:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+        "release_binding_matches_sp08": "True"
+      }
+    },
+    {
+      "checkCode": "OPS-002",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 access-control snapshot evidence is present or referenced.",
+      "evidence": {
+        "access_snapshot_ref": "sha256:access-snapshot"
+      }
+    },
+    {
+      "checkCode": "OPS-003",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 custody mode is declared for the governance mode.",
+      "evidence": {
+        "custody_mode": "aws_kms_per_election_envelope_v1"
+      }
+    },
+    {
+      "checkCode": "OPS-004",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 executor key lifecycle is declared as ephemeral in-memory handling.",
+      "evidence": {
+        "executor_key_lifecycle": "executor_ephemeral_memory_key_v1"
+      }
+    },
+    {
+      "checkCode": "OPS-005",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 public privacy boundary and wording exclude forbidden operational, readiness, legal, and certification material.",
+      "evidence": {}
+    },
+    {
+      "checkCode": "OPS-006",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 backup/restore evidence is referenced.",
+      "evidence": {
+        "backup_restore_ref": "sha256:backup-restore"
+      }
+    },
+    {
+      "checkCode": "OPS-007",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 incident/no-incident declaration is present.",
+      "evidence": {
+        "incident_status": "no_incident_declared"
+      }
+    },
+    {
+      "checkCode": "OPS-008",
+      "status": "pass",
+      "resultCode": "operational_security_evidence_valid",
+      "message": "SP-10 auditor-room access-log evidence is referenced.",
+      "evidence": {
+        "auditor_room_access_log_ref": "sha256:auditor-room-access-log"
+      }
+    }
+  ]
+}

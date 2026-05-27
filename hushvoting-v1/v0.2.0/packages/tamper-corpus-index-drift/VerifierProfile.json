@@ -1,0 +1,19 @@
+{
+  "profileId": "restricted_owner_auditor_v1",
+  "displayName": "public_anonymous_v1",
+  "allowsDraftProtocolPackage": true,
+  "allowsPendingLaterFeatureEvidence": true,
+  "requiresRestrictedEvidence": false,
+  "requiresHighAssuranceEvidence": false,
+  "requiredCheckCodes": [
+    "VFY-MAN-000",
+    "VFY-ELECTION-000",
+    "VFY-ACCEPTED-000",
+    "VFY-PUBLISHED-000",
+    "VFY-SP04-000",
+    "CTRL-000",
+    "VFY-PRIVACY-000",
+    "REL-000",
+    "REV-000"
+  ]
+}

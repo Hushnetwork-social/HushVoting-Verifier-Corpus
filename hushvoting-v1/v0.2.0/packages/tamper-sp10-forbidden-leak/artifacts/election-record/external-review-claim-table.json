@@ -1,0 +1,82 @@
+{
+  "schema": "HushVotingExternalReviewClaimTable-v1",
+  "programVersion": "SP09-P1",
+  "claims": [
+    {
+      "claimId": "CLM-SP03-VERIFIER-REPLAY",
+      "claimState": "program_defined",
+      "allowedWording": "External examination program is defined; no reviewer conclusion is available.",
+      "hushControlledEvidenceRefs": [
+        "AuditPackageManifest.json",
+        "VerifierInputManifest.json",
+        "verifier-output/VerifierOutput.json"
+      ],
+      "externalReviewEvidenceRefs": [],
+      "affectedFindingIds": []
+    },
+    {
+      "claimId": "CLM-SP05-ELIGIBILITY-SEPARATION",
+      "claimState": "program_defined",
+      "allowedWording": "External examination program is defined; no reviewer conclusion is available.",
+      "hushControlledEvidenceRefs": [
+        "artifacts/election-record/eligibility-policy.json",
+        "artifacts/election-record/eligibility-summary.json",
+        "artifacts/election-record/eligibility-verifier-output.json"
+      ],
+      "externalReviewEvidenceRefs": [],
+      "affectedFindingIds": []
+    },
+    {
+      "claimId": "CLM-SP07-PUBLICATION-PROOF",
+      "claimState": "program_defined",
+      "allowedWording": "External examination program is defined; no reviewer conclusion is available.",
+      "hushControlledEvidenceRefs": [
+        "artifacts/election-record/publication-proof-transcript.json",
+        "artifacts/election-record/publication-proof-verifier-output.json",
+        "artifacts/election-record/witness-deletion-receipt.json"
+      ],
+      "externalReviewEvidenceRefs": [],
+      "affectedFindingIds": []
+    },
+    {
+      "claimId": "CLM-SP08-RELEASE-INTEGRITY",
+      "claimState": "program_defined",
+      "allowedWording": "External examination program is defined; no reviewer conclusion is available.",
+      "hushControlledEvidenceRefs": [
+        "artifacts/election-record/release-manifest.json",
+        "artifacts/election-record/release-integrity.json",
+        "artifacts/election-record/release-integrity-verifier-output.json"
+      ],
+      "externalReviewEvidenceRefs": [],
+      "affectedFindingIds": []
+    },
+    {
+      "claimId": "CLM-SP09-EXAMINATION-PROGRAM",
+      "claimState": "program_defined",
+      "allowedWording": "External examination program is defined; no reviewer conclusion is available.",
+      "hushControlledEvidenceRefs": [
+        "artifacts/election-record/external-review-status.json",
+        "artifacts/election-record/external-review-claim-table.json",
+        "artifacts/election-record/external-review-verifier-output.json"
+      ],
+      "externalReviewEvidenceRefs": [],
+      "affectedFindingIds": []
+    }
+  ],
+  "forbiddenPhrases": [
+    "certified",
+    "approved for public elections",
+    "bug-free",
+    "formally verified",
+    "same assurance as swiss public e-voting",
+    "externally audited"
+  ],
+  "publicPrivacyBoundary": [
+    "no_full_report_body",
+    "no_finding_body",
+    "no_reviewer_workpaper",
+    "no_retest_evidence_body",
+    "no_confidential_report_url",
+    "no_voter_detail"
+  ]
+}

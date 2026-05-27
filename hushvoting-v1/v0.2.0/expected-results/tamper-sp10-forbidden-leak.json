@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "verifier-corpus-expected-result.v1",
+  "fixtureId": "tamper-sp10-forbidden-leak",
+  "profileId": "public_anonymous_v1",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "requiredResultCodes": [
+    "operational_security_forbidden_material"
+  ],
+  "requiredCheckStatuses": {
+    "OPS-005": "fail"
+  },
+  "ignoredFields": [
+    "verifiedAt",
+    "outputPath",
+    "absolutePackagePath"
+  ],
+  "stableOutputExcerpt": {
+    "packageId": "HushElectionPackage-13e6fa69-1d53-4968-8b1c-397333458253",
+    "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+    "verifierProfileId": "public_anonymous_v1",
+    "overallStatus": "fail",
+    "packageHash": "sha256:b5b27548e51572175a059cbd29b868937a8e239f40c6bac9a6b1783dfd51f502"
+  },
+  "normalizedOutputHash": "sha256:02e0f11192a01cfb11e53334d83b7b1d9b04ed51c1690fe724c0f3f95ed8c85f",
+  "outputRef": "validation/verifier-output/tamper-sp10-forbidden-leak/VerifierOutput.json"
+}

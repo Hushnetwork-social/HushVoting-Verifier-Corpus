@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-expected-result-drift",
+  "fixtureFamily": "stale_version_drift",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "stale_version_drift",
+  "profileDescription": "Expected-result drift is represented as package manifest hash drift.",
+  "packagePath": "packages/tamper-expected-result-drift",
+  "packageHash": "sha256:e84da46d3431b3c62c702997d62371bd37cb71772b9149d71e50ab13afae3f85",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Changes result-binding bytes so the expected output no longer matches observed package content."
+  },
+  "changedArtifact": "artifacts/election-record/result-binding.json",
+  "expectedPrimaryResultCode": "package_manifest_artifact_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-expected-result-drift.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-expected-result-drift",
+    "output": "validation/verifier-output/tamper-expected-result-drift"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-stale-protocol-package-version",
+  "fixtureFamily": "stale_version_drift",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "stale_version_drift",
+  "profileDescription": "Stale Protocol Omega package binding must block score movement.",
+  "packagePath": "packages/tamper-stale-protocol-package-version",
+  "packageHash": "sha256:1477167aff548ed83568802ffd4cf59fa2e3f7da3f7f6a45f991b89967ea7e9c",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks the Protocol Omega package manifest binding."
+  },
+  "changedArtifact": "artifacts/election-record/release-integrity.json",
+  "expectedPrimaryResultCode": "release_integrity_circuit_or_package_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-stale-protocol-package-version.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-stale-protocol-package-version",
+    "output": "validation/verifier-output/tamper-stale-protocol-package-version"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}

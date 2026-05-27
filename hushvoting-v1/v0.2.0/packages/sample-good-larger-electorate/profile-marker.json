@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "verifier-corpus-good-sample-profile-marker.v1",
+  "fixtureId": "sample-good-larger-electorate",
+  "corpusProfileId": "larger_electorate",
+  "description": "Synthetic good sample with a larger roster, larger accepted-ballot set, and reconciled low non-voter count.",
+  "generatedAt": "2026-05-27T12:00:00.0000000Z",
+  "publicBoundary": "Synthetic profile marker only; this file is not restricted election evidence."
+}

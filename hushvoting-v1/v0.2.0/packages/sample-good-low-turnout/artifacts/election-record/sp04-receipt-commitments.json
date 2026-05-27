@@ -1,0 +1,10 @@
+[
+  {
+    "acceptedBallotId": "6787e113-f53d-41fb-a2a1-488df2589aac",
+    "preparedBallotId": "5ddbd7e8-3c0c-414e-82ab-6bee9fa312d5",
+    "acceptedAt": "2026-05-27T11:34:01Z",
+    "preparedBallotHash": "low_turnout-prepared-final-1",
+    "receiptCommitment": "low_turnout-receipt-1",
+    "receiptCommitmentScheme": "sha256(receipt_secret|prepared_ballot_hash|accepted_ballot_id)"
+  }
+]

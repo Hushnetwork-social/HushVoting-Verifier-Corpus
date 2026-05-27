@@ -1,0 +1,13 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "reportPackageId": "35344cf2-589b-46bf-aced-c2d808a3c614",
+  "reportPackageHash": "f24c34359b58bfb6acedc2d808a3c614652ddaf4e3392c5bda7fba8bfa229971",
+  "finalizeArtifactId": "29d52574-39da-40f0-8e02-f011c3bab209",
+  "officialResultArtifactId": "4100a11d-3b7c-4187-aeb9-4f0bb24d581b",
+  "unofficialResultArtifactId": "516c18c9-c3b0-4bb7-8897-ed6f320b0d84",
+  "outcomeStatus": "clean_finalized",
+  "cleanFinalization": true,
+  "finalizationMode": "clean_finalization",
+  "abnormalFinalizationEvidenceHash": null,
+  "tamperMarker": "artifact hash changed without updating the manifest"
+}

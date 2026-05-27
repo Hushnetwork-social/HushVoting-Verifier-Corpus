@@ -1,0 +1,21 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "publishedBallotCount": 2,
+  "publishedBallotStreamHash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "publishedBallots": [
+    {
+      "publicationSequence": 1,
+      "encryptedBallotPackage": "published-a",
+      "proofBundle": "proof-a",
+      "encryptedBallotPackageHash": "1FE0F059B7D65DA5DAF8528A2B1D8DED59C7F1F840AAB69AE76C25F1E898C243",
+      "proofBundleHash": "731CDE0C1EA51BE60D219636C7D517452F25D093375D5B175800A9B1DF941BEF"
+    },
+    {
+      "publicationSequence": 2,
+      "encryptedBallotPackage": "published-b",
+      "proofBundle": "proof-b",
+      "encryptedBallotPackageHash": "A1A0436FB27B268464A7EF234A626F45FE4E517B06B8C696185EDEF69A65B0D9",
+      "proofBundleHash": "B98A3D85F868C3175F492B3D75FBB79216610CF132A7D99CEF28DD4BF1CAE0E8"
+    }
+  ]
+}

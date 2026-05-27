@@ -1,0 +1,26 @@
+{
+  "electionId": "13e6fa69-1d53-4968-8b1c-397333458253",
+  "verifierProfileId": "public_anonymous_v1",
+  "verifiedAt": "2026-05-27T12:00:00Z",
+  "results": [
+    {
+      "checkCode": "CTRL-000",
+      "status": "pass",
+      "resultCode": "trustee_control_domain_evidence_valid",
+      "message": "SP-06 control-domain profile is declared for the package.",
+      "evidence": {
+        "control_domain_profile_id": "high_assurance_independent_trustees_v1"
+      }
+    },
+    {
+      "checkCode": "CTRL-002",
+      "status": "pass",
+      "resultCode": "trustee_control_domain_evidence_valid",
+      "message": "Required trustee control-domain evidence is complete.",
+      "evidence": {
+        "complete_evidence_count": "5",
+        "trustee_count": "5"
+      }
+    }
+  ]
+}

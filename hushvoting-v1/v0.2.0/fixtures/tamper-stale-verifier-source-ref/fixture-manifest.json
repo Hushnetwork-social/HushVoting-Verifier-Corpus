@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "verifier-corpus-fixture-manifest.v1",
+  "fixtureId": "tamper-stale-verifier-source-ref",
+  "fixtureFamily": "stale_version_drift",
+  "status": "accepted",
+  "visibility": "public",
+  "profileId": "public_anonymous_v1",
+  "corpusProfileId": "stale_version_drift",
+  "profileDescription": "Stale verifier source reference must block score movement.",
+  "packagePath": "packages/tamper-stale-verifier-source-ref",
+  "packageHash": "sha256:81a4ab9e6a06dfd9772c0307daff9d8f9798cc892fc80304c4c5cf1b9cb68018",
+  "mutation": {
+    "mutationType": "synthetic_tamper",
+    "description": "Breaks the bound verifier source component digest to simulate stale verifier-source drift."
+  },
+  "changedArtifact": "artifacts/election-record/release-manifest.json",
+  "expectedPrimaryResultCode": "release_integrity_component_hash_mismatch",
+  "expectedCheckStatus": "fail",
+  "expectedOverallStatus": "fail",
+  "expectedExitCode": 1,
+  "expectedOutputRef": "expected-results/tamper-stale-verifier-source-ref.json",
+  "proofStatement": "Synthetic tamper package must expose the documented primary verifier failure.",
+  "secondaryFailuresAllowed": true,
+  "verifierInvocation": {
+    "profileId": "public_anonymous_v1",
+    "package": "packages/tamper-stale-verifier-source-ref",
+    "output": "validation/verifier-output/tamper-stale-verifier-source-ref"
+  },
+  "forbiddenMaterialScan": {
+    "expectedTamperFinding": false,
+    "unexpectedFindingPolicy": "block"
+  }
+}
